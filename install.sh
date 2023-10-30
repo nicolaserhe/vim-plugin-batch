@@ -20,5 +20,5 @@ else
     mv ./.vimrc ~/.vimrc
 fi
 
-vim -E -c ":LspInstallServer | :qall"
+vim -E -c ":LspInstallServer | :qall" main.c
 
