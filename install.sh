@@ -6,19 +6,16 @@ sudo apt install gcc
 
 if [ -d ~/.vim ]
 then
-    mv ~/.vim ~/.vim.bk
-    mv ./.vim ~/
+    rm -rf ~/.vim
 else
-    mv ./.vim ~/.vim
 fi
 
 if [ -f ~/.vimrc ]
 then
-    mv ./.vimrc ~/vimrc.bk
-    mv ./.vimrc ~/
-else
-    mv ./.vimrc ~/.vimrc
+    rm -rf ~/.vimrc
 fi
 
+cp -r .vim ~/
+cp .vimrc ~/
 vim -E -c ":LspInstallServer | :qall" main.c
 
