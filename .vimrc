@@ -4,14 +4,11 @@
 set nocompatible         " 设置不兼容原始vi模式
 filetype on              " 设置开启文件类型侦测
 filetype plugin on       " 设置加载对应文件类型的插件
-set noeb                 " 关闭错误的提示
 syntax enable            " 开启语法高亮功能
 syntax on                " 自动语法高亮
 set t_Co=256             " 开启256色支持
 set cmdheight=2          " 设置命令行的高度
-set showcmd              " select模式下显示选中的行数
-set ruler                " 总是显示光标位置
-set laststatus=2         " 总是显示状态栏
+set showcmd              " 待决模式下显示输入的命令
 set number               " 开启行号显示
 set cursorline           " 高亮显示当前行
 set ttimeoutlen=0        " 设置<ESC>键响应时间
@@ -19,25 +16,20 @@ set ttimeoutlen=0        " 设置<ESC>键响应时间
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 代码缩进和排版
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set autoindent           " 设置自动缩进
-set cindent              " 设置使用C/C++语言的自动缩进方式
-set cinoptions=g0,:0,N-s,(0    " 设置C/C++语言的具体缩进方式
-set smartindent          " 智能的选择对其方式
 filetype indent on       " 自适应不同语言的智能缩进
+set tabstop=4            " 设置制表符占用空白字符数
+set shiftwidth=4         " 设置缩进占用空白字符数
+set softtabstop=2        " 设置tab键占用空白字符数
 set expandtab            " 将制表符扩展为空格
-set tabstop=4            " 设置编辑时制表符占用空格数
-set shiftwidth=4         " 设置格式化时制表符占用空格数
-set softtabstop=4        " 设置4个空格为制表符
-set smarttab             " 在行和段开始处使用制表符
-set wrap                 " 设置折行
-set backspace=2          " 使用回车键正常处理indent,eol,start等
-set sidescroll=10        " 设置向右滚动字符数
-set foldenable           " 设置折叠代码
+" 说明一点，制表符就是\t字符，缩进指的是vim下的<，>，=这几个动作产生的缩进
+" tab键，不等同一个制表符，tab建会产生一定数量的空白字符
+" 空白字符会先最大限度的转换为制表符，剩下的转换为空格，如果将制表符扩展为空格，那么空白字符都是空格
+" 所以说如果设置tab键的空白字符数等于制表符占用的空白字符数，那么一个tab键等价与一个制表符
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 代码补全
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set wildmenu             " vim自身命名行模式智能补全
+set wildmenu             " 命令行下自动补全显示菜单
 set completeopt-=preview " 补全时不显示窗口，只显示补全列表
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -45,16 +37,14 @@ set completeopt-=preview " 补全时不显示窗口，只显示补全列表
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set hlsearch            " 高亮显示搜索结果
 set incsearch           " 开启实时搜索功能
-set ignorecase          " 搜索时大小写不敏感
 set smartcase           " 设置智能大小写
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 缓存设置
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nobackup            " 设置不备份
-set noswapfile          " 禁止生成临时文件
+set hidden              " 可以在不保存当前buffer的情况下，切换buffer
 set autoread            " 文件在vim之外修改过，自动重新读入
-set autowrite           " 设置自动保存
 set confirm             " 在处理未保存或只读文件的时候，弹出确认
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
