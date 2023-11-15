@@ -19,7 +19,7 @@ set ttimeoutlen=0        " 设置<ESC>键响应时间
 filetype indent on       " 自适应不同语言的智能缩进
 set tabstop=4            " 设置制表符占用空白字符数
 set shiftwidth=4         " 设置缩进占用空白字符数
-set softtabstop=2        " 设置tab键占用空白字符数
+set softtabstop=4        " 设置tab键占用空白字符数
 set expandtab            " 将制表符扩展为空格
 " 说明一点，制表符就是\t字符，缩进指的是vim下的<，>，=这几个动作产生的缩进
 " tab键，不等同一个制表符，tab建会产生一定数量的空白字符
