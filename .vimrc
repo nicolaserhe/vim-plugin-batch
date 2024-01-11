@@ -132,6 +132,10 @@ let g:NERDTreeFileExtensionHighlightFullName = 1
 let g:NERDTreeExactMatchHighlightFullName = 1
 let g:NERDTreePatternMatchHighlightFullName = 1
 
+" vim-gitgutter
+set updatetime=100
+
+
 " 显示tab和空格
 " set list
 " set listchars:tab:\|-,space:•
@@ -139,6 +143,7 @@ let g:NERDTreePatternMatchHighlightFullName = 1
 
 " 禁用vim-indent-guides插件
 " let g:indentLine_enabled = 0
+
 
 
 set tags=tags;

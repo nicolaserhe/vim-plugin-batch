@@ -19,30 +19,28 @@ completes=(
     "mattn/vim-lsp-settings"
 )
 
-
 nerdtrees=(
     "preservim/nerdtree"
     "tiagofumo/vim-nerdtree-syntax-highlight"
 )
 
 plugins=(
-    "jiangmiao/auto-pairs"
-    "chrisbra/changesPlugin"
-    "yggdroot/indentline"
-    "luochen1990/rainbow"
-    "godlygeek/tabular"
-    "preservim/tagbar"
-    "vim-airline/vim-airline"
-    "ton/vim-alternate"
-    "tpope/vim-commentary"
-    "octol/vim-cpp-enhanced-highlight"
-    "ryanoasis/vim-devicons"
-    "tpope/vim-endwise"
-    "vim-utils/vim-man"
-    "junegunn/vim-peekaboo"
-    "junegunn/vim-slash"
-    "tpope/vim-surround"
-    "bronson/vim-trailing-whitespace"
+    "jiangmiao/auto-pairs"                                  # 关于括号对的插件
+    "yggdroot/indentline"                                   # 显示缩进
+    "luochen1990/rainbow"                                   # 彩虹括号插件
+    "godlygeek/tabular"                                     # 处理表格的插件
+    "preservim/tagbar"                                      # 关于函数，类，变量简介的插件
+    "vim-airline/vim-airline"                               # 底部和顶部buffer状态栏的插件
+    "ton/vim-alternate"                                     # 在.c和.h文件之间切换的插件
+    "tpope/vim-commentary"                                  # 注释插件
+    "octol/vim-cpp-enhanced-highlight"                      # cpp高亮插件
+    "ryanoasis/vim-devicons"                                # 为文件添加图标
+    "tpope/vim-endwise"                                     # 自动添加特殊结构的结束符号，比如shell中if的fi
+    "vim-utils/vim-man"                                     # 增强man手册插件
+    "junegunn/vim-peekaboo"                                 # 输入双引号的时候显示当前的宏
+    "junegunn/vim-slash"                                    # 增强缓冲区搜索体验插件
+    "tpope/vim-surround"                                    # 给选中的字符串加外部括号对的插件
+    "bronson/vim-trailing-whitespace"                       # 将行尾空白字符标记为红色
 )
 
 # sudo apt update
