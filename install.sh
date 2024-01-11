@@ -43,6 +43,11 @@ plugins=(
     "bronson/vim-trailing-whitespace"                       # 将行尾空白字符标记为红色
 )
 
+gits=(
+    "airblade/vim-gitgutter"
+    "tpope/vim-fugitive"
+)
+
 # sudo apt update
 # sudo apt vim
 # sudo apt install gcc
@@ -74,6 +79,7 @@ mkdir -p "$vim_pack"/theme/start
 mkdir -p "$vim_pack"/complete/start
 mkdir -p "$vim_pack"/nerdtree/start
 mkdir -p "$vim_pack"/plugin/start
+mkdir -p "$vim_pack"/git/start
 
 # git clone 插件
 cd "$vim_pack"/theme/start
@@ -96,6 +102,12 @@ done
 
 cd "$vim_pack"/plugin/start
 for item in "${plugins[@]}"
+do
+    git clone "$github"/"$item"
+done
+
+cd "$vim_pack"/git/start
+for item in "${git[@]}"
 do
     git clone "$github"/"$item"
 done
