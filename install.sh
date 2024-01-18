@@ -22,6 +22,7 @@ completes=(
 nerdtrees=(
     "preservim/nerdtree"
     "tiagofumo/vim-nerdtree-syntax-highlight"
+    "Xuyuanp/nerdtree-git-plugin"
 )
 
 plugins=(
@@ -106,8 +107,8 @@ do
     git clone "$github"/"$item"
 done
 
-cd "$vim_pack"/git/start
-for item in "${git[@]}"
+cd "$vim_pack"/gits/start
+for item in "${gits[@]}"
 do
     git clone "$github"/"$item"
 done

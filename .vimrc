@@ -113,7 +113,7 @@ inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 inoremap <expr> <cr>   pumvisible() ? asyncomplete#close_popup() : "\<cr>"
 
-nnoremap <leader>d :LspkDefinition<cr>
+nnoremap <leader>d :LspDefinition<cr>
 nnoremap <leader>wd :LspPeekDefinition<cr>
 
 nnoremap <leader>D :LspDeclaration<cr>
