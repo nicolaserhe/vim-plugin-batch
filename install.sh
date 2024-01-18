@@ -4,7 +4,6 @@
 #######################################################################
 # 变量初始化
 #######################################################################
-HOME=/home/gcy/tmp
 github="https://github.com"
 vim_pack=""$HOME"/.vim/pack"
 
@@ -48,11 +47,6 @@ gits=(
     "airblade/vim-gitgutter"
     "tpope/vim-fugitive"
 )
-
-# sudo apt update
-# sudo apt vim
-# sudo apt install gcc
-
 
 #######################################################################
 # 清理.vim和.vimrc
