@@ -80,7 +80,7 @@ mkdir -p "$vim_pack"/git/start
 cd "$vim_pack"/theme/start
 for item in "${themes[@]}"
 do
-    git clone "$github"/"$item" ./dracula
+    git clone "$github"/"$item"
 done
 
 cd "$vim_pack"/complete/start
