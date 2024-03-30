@@ -132,6 +132,9 @@ let g:NERDTreePatternMatchHighlightFullName = 1
 " vim-gitgutter
 set updatetime=100
 
+" LeaderF
+nnoremap <leader>f :Leaderf file --popup<cr>
+nnoremap <leader>F :Leaderf file<cr>
 
 " 显示tab和空格
 " set list
