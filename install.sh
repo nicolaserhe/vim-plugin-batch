@@ -29,7 +29,6 @@ plugins=(
     "yggdroot/indentline"                                   # 显示缩进
     "luochen1990/rainbow"                                   # 彩虹括号插件
     "godlygeek/tabular"                                     # 处理表格的插件
-    "preservim/tagbar"                                      # 关于函数，类，变量简介的插件
     "vim-airline/vim-airline"                               # 底部和顶部buffer状态栏的插件
     "ton/vim-alternate"                                     # 在.c和.h文件之间切换的插件
     "tpope/vim-commentary"                                  # 注释插件

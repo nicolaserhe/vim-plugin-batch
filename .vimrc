@@ -119,9 +119,6 @@ nnoremap <leader>wd :LspPeekDefinition<cr>
 nnoremap <leader>D :LspDeclaration<cr>
 nnoremap <leader>wD :LspPeekDeclaration<cr>
 
-" tagbar
-nnoremap <silent> <leader>t :TagbarOpenAutoClose<cr>
-
 " auto-pair
 let g:AutoPairsShortcutJump = '<F1>'
 
@@ -143,9 +140,3 @@ set updatetime=100
 
 " 禁用vim-indent-guides插件
 " let g:indentLine_enabled = 0
-
-
-
-set tags=tags;
-set autochdir
-
