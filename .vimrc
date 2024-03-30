@@ -133,8 +133,14 @@ let g:NERDTreePatternMatchHighlightFullName = 1
 set updatetime=100
 
 " LeaderF
-nnoremap <leader>f :Leaderf file --popup<cr>
 nnoremap <leader>F :Leaderf file<cr>
+nnoremap <leader>wF :Leaderf file --popup<cr>
+nnoremap <leader>f :Leaderf function <cr>
+nnoremap <leader>wf :Leaderf function --popup<cr>
+nnoremap <leader>t :Leaderf bufTag <cr>
+nnoremap <leader>wt :Leaderf bufTag --popup<cr>
+noremap <leader>r :<C-U><C-R>=printf("Leaderf! gtags -r %s --auto-jump", expand("<cword>"))<CR><CR>
+noremap <leader>wr :<C-U><C-R>=printf("Leaderf! gtags -r %s --auto-jump", expand("<cword>"))<CR> --popup<CR>
 
 " 显示tab和空格
 " set list
