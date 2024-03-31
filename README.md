@@ -10,22 +10,19 @@ vim-plugin-batch
     ./install.sh
 
 
-#### 设置Nerd Font
+## 设置Nerd Font
 
 为防止乱码，需设置终端字体为`Droid Sans Mono Nerd Font`。
 
-#### 更新vimplus
 
-紧跟vimplus的步伐，尝鲜新特性
+## Update
 
-    ./update.sh
+    cd ~/vim-plugin-batch && ./update.sh
 
 
-#### 多用户支持
+## Uninstall
 
-将vimplus在某个用户下安装好后，若需要在其他用户也能够使用vimplus，则执行
-
-    sudo ./install_to_user.sh username1 username2 //替换为真实用户名
+    cd ~/vim-plugin-batch && ./uninstall.sh
 
 
 ## 自定义
