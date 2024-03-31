@@ -36,38 +36,37 @@ vim-plugin-batch
 
 | 插件 | 说明 |
 |--|--|
-| [dracula/vim][1] | dracula 主题 |
-| [preservim/nerdtree][6] | 代码资源管理器 |
-| [tiagofumo/vim-nerdtree-syntax-highlight][52] | NerdTree文件类型高亮 |
-| [Xuyuanp/nerdtree-git-plugin][53] | NerdTree显示git状态 |
-| [jiangmiao/auto-pairs][10] | 自动补全引号、圆括号、花括号等 |
-| [yggdroot/indentline][11] | 显示缩进 |
-| [luochen1990/rainbow][11] | 彩虹括号插件 |
-| [godlygeek/tabular][20] | 代码、注释、表格对齐 |
-| [ryanoasis/vim-devicons][15] | 显示文件类型图标 |
-| [vim-airline/vim-airline][8] | 状态栏美化 |
-| [Yggdroot/LeaderF][56] | 模糊搜索 |
-| [tpope/vim-surround][16] | 自动增加、替换配对符的插件 |
-| [tpope/vim-commentary][17] | 注释代码 |
-| [tpope/vim-endwise][19] | if/end/endif/endfunction补全 |
-| [junegunn/vim-slash][50] | 移动光标后清除高亮 |
-| [ton/vim-alternate][100] | 在.c和.h文件之间切换 |
-| [octol/vim-cpp-enhanced-highlight][11] | cpp代码高亮 |
-| [vim-utils/vim-man][100] | 增强man手册 |
-| [junegunn/vim-peekaboo][11] | 输入双引号的时候显示所有宏内容 |
-| [bronson/vim-trailing-whitespace][11] | 将行尾空白字符标记为红色 |
-| [vim-fugitive][36]                  | 集成Git                                                                        |
+| [dracula/vim][2] | dracula 主题 |
+| [preservim/nerdtree][3] | 代码资源管理器 |
+| [tiagofumo/vim-nerdtree-syntax-highlight][4] | NerdTree文件类型高亮 |
+| [Xuyuanp/nerdtree-git-plugin][5] | NerdTree显示git状态 |
+| [jiangmiao/auto-pairs][6] | 自动补全引号、圆括号、花括号等 |
+| [yggdroot/indentline][7] | 显示缩进 |
+| [luochen1990/rainbow][8] | 彩虹括号插件 |
+| [godlygeek/tabular][9] | 代码、注释、表格对齐 |
+| [ryanoasis/vim-devicons][10] | 显示文件类型图标 |
+| [vim-airline/vim-airline][11] | 状态栏美化 |
+| [Yggdroot/LeaderF][12] | 模糊搜索 |
+| [tpope/vim-surround][13] | 自动增加、替换配对符的插件 |
+| [tpope/vim-commentary][14] | 注释代码 |
+| [tpope/vim-endwise][15] | if/end/endif/endfunction补全 |
+| [junegunn/vim-slash][16] | 移动光标后清除高亮 |
+| [ton/vim-alternate][17] | 在.c和.h文件之间切换 |
+| [octol/vim-cpp-enhanced-highlight][18] | cpp代码高亮 |
+| [vim-utils/vim-man][19] | 增强man手册 |
+| [junegunn/vim-peekaboo][20] | 输入双引号的时候显示所有宏内容 |
+| [bronson/vim-trailing-whitespace][21] | 将行尾空白字符标记为红色 |
 
 #### Git插件
 
-    [airblade/vim-gitgutter][1], [tpope/vim-fugitive][2]
+    [airblade/vim-gitgutter][22], [tpope/vim-fugitive][23]
 
 #### lsp(语言服务器协议)插件
 
-    [prabirshrestha/asyncomplete-lsp.vim][1]
-    [prabirshrestha/asyncomplete.vim][1]
-    [prabirshrestha/vim-lsp][11]
-    [mattn/vim-lsp-settings][11]
+    [prabirshrestha/asyncomplete-lsp.vim][24]
+    [prabirshrestha/asyncomplete.vim][25]
+    [prabirshrestha/vim-lsp][26]
+    [mattn/vim-lsp-settings][27]
 
 
 
@@ -169,35 +168,30 @@ This software is licensed under the [MIT license][75]. © 2024 Changyi Guo
 
 
   [1]: https://github.com/nicolaserhe/vim-plugin-batch/blob/master/Screenshot.png
-  [3]: https://brew.sh/
-  [4]: https://github.com/junegunn/vim-plug
-  [5]: https://github.com/Valloric/YouCompleteMe
-  [6]: https://github.com/preservim/nerdtree
-  [8]: https://github.com/vim-airline/vim-airline
-  [9]: https://github.com/powerline/powerline
-  [10]: https://github.com/jiangmiao/auto-pairs
-  [12]: https://github.com/ctrlpvim/ctrlp.vim
-  [13]: https://github.com/preservim/tagbar
-  [14]: https://github.com/vim-scripts/taglist.vim
-  [15]: https://github.com/ryanoasis/vim-devicons
-  [16]: https://github.com/tpope/vim-surround
-  [17]: https://github.com/tpope/vim-commentary
-  [18]: https://github.com/tpope/vim-repeat
-  [75]: https://github.com/nicolaserhe/vim-plugin-batch/LICENSE
-  [76]: https://blog.csdn.net/wang73ying/article/details/82491993
-  [77]: https://blog.csdn.net/liuyangbo121/article/details/82971736
-  [78]: https://github.com/chxuan/vimplus/blob/master/install.sh
-  [79]: https://hub.docker.com/r/chxuan/ubuntu-vimplus
-  [80]: https://github.com/zhoumengkang
-  [81]: https://github.com/chxuan/vimplus/issues/208
-  [82]: https://github.com/chxuan/vimplus/blob/master/.vimrc
-  [83]: https://github.com/chxuan/vimplus/blob/master/.vimrc.custom.plugins
-  [84]: https://github.com/chxuan/vimplus/blob/master/.vimrc.custom.config
-  [85]: https://github.com/zibraque
-  [86]: https://github.com/gfreewind
-  [87]: https://termux.com/
-  [88]: https://github.com/wh656325437
-  [89]: https://github.com/luguifang
-  [90]: https://github.com/liyewen521
-  [91]: https://github.com/xht19980305
+  [2]: https://github.com/dracula/vim
+  [3]: https://github.com/preservim/nerdtree
+  [4]: https://github.com/tiagofumo/vim-nerdtree-syntax-highlight
+  [5]: https://github.com/Xuyuanp/nerdtree-git-plugin
+  [6]: https://github.com/jiangmiao/auto-pairs
+  [6]: https://github.com/yggdroot/indentline
+  [7]: https://github.com/luochen1990/rainbow
+  [8]: https://github.com/godlygeek/tabular
+  [9]: https://github.com/ryanoasis/vim-devicons
+  [10]: https://github.com/vim-airline/vim-airline
+  [11]: https://github.com/Yggdroot/LeaderF][56
+  [12]: https://github.com/tpope/vim-surround
+  [13]: https://github.com/tpope/vim-commentary
+  [14]: https://github.com/tpope/vim-endwise
+  [15]: https://github.com/junegunn/vim-slash
+  [16]: https://github.com/ton/vim-alternate
+  [17]: https://github.com/octol/vim-cpp-enhanced-highlight
+  [18]: https://github.com/vim-utils/vim-man][100
+  [19]: https://github.com/junegunn/vim-peekaboo
+  [20]: https://github.com/bronson/vim-trailing-whitespace
+  [21]: https://github.com/airblade/vim-gitgutter
+  [22]: https://github.com/tpope/vim-fugitive
+  [23]: https://github.com/[prabirshrestha/asyncomplete-lsp.vim
+  [24]: https://github.com/[prabirshrestha/asyncomplete.vim
+  [25]: https://github.com/[prabirshrestha/vim-lsp
+  [26]: https://github.com/[mattn/vim-lsp-settings
 
