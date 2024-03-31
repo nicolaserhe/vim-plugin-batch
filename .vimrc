@@ -134,7 +134,10 @@ nnoremap <leader>wD :LspPeekDeclaration<cr>
 nnoremap <leader>r :LspNextReference<cr>
 nnoremap <leader>R :LspPreviousReference<cr>
 nnoremap <leader>e :LspNextError<cr>
+nnoremap <leader>E :LspPreviousError<cr>
 nnoremap <leader>wa :LspNextWarning<cr>
+nnoremap <leader>Wa :LspPreviousWarning<cr>
+" let g:lsp_diagnostics_enabled = 0         " disable diagnostics support
 
 
 " auto-pair
@@ -151,7 +154,7 @@ let g:NERDTreePatternMatchHighlightFullName = 1
 
 
 " vim-gitgutter
-set updatetime = 100
+set updatetime=100
 
 
 " LeaderF
