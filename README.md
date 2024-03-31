@@ -56,26 +56,17 @@ vim-plugin-batch
 | [vim-utils/vim-man][19] | 增强man手册 |
 | [junegunn/vim-peekaboo][20] | 输入双引号的时候显示所有宏内容 |
 | [bronson/vim-trailing-whitespace][21] | 将行尾空白字符标记为红色 |
-
-#### Git插件
-
-|-|
-| [airblade/vim-gitgutter][22] |
-| [tpope/vim-fugitive][23] |
-
-#### Lsp(语言服务器协议)插件
-
-|-|
-| [prabirshrestha/asyncomplete-lsp.vim][24] |
-| [prabirshrestha/asyncomplete.vim][25] |
-| [prabirshrestha/vim-lsp][26] |
-| [mattn/vim-lsp-settings][27] |
-
+| [airblade/vim-gitgutter][22] | 集成Git |
+| [tpope/vim-fugitive][23] | | Git |
+| [prabirshrestha/asyncomplete-lsp.vim][24] | Lsp补全  |
+| [prabirshrestha/asyncomplete.vim][25] | 代码补全 |
+| [prabirshrestha/vim-lsp][26] | Lsp客户端 |
+| [mattn/vim-lsp-settings][27] | Lsp下载 |
 
 
 ## 快捷键
 
-以下是部分快捷键，可通过vimplus的`<leader>h`命令查看[vimplus帮助文档][59]。
+以下是部分快捷键，可通过`:helpFile`命令查看[help.md][59]。
 
 | 快捷键              | 说明                                      |
 | -------             | -----                                     |
@@ -136,33 +127,21 @@ vim-plugin-batch
 
 ## FAQ
 
-- **`vimplus怎么安装新插件？`**
+- **`vim-plugin-batch怎么安装新插件？`**
 
-    编辑[~/.vimrc.custom.plugins][83]，添加自定义插件。
+    编辑[~/.vimrc][83]，添加自定义插件。
 
-- **`vimplus怎么添加自定义配置？`**
+- **`vim-plugin-batch安装后会安装那些依赖？`**
 
-    编辑[~/.vimrc.custom.config][84]，添加自定义配置。
+    todo
 
-- **`vimplus安装脚本会在自己电脑上安装哪些软件？`**
-
-    网络良好情况下，vimplus只需30分钟左右即可将vim cpp环境配置好，vimplus真正的做到了一键配置，不让用户操心。vimplus会安装一些必备软件，比如说python、cmake、gcc、fontconfig等，vimplus也考虑到了有些系统的vim不支持python，它会自动去下载vim源码将python支持编译进去，vimplus也会安装nerd-font不让vim显示出现乱码，最最重要的是vimplus实现了ycm自动编译安装，给折腾了几天ycm都没有安装好的用户带来了新的希望，而且vimplus也支持macos和linux众多发行版，让linux发烧友频繁切换发行版而不用操心vim环境配置。最后说了这么多，不如看[vimplus安装脚本][78]来的直接:smile:。
-
-- **`启动vim报错：RequestsDependencyWarning: Old version of cryptography ([1, 2, 3]) may cause slowdown.`**
-
-    可以尝试将cryptography删掉，具体见[issues #208][81]。
-
-- **`vimplus不支持目前用户正在使用的系统怎么办？`**
-
-    可以给作者提[Issues][39]，或者自己fork vimplus来修改，并提交pr，贡献自己的一份力量。
-
-- **`安装vimplus后Airline等插件有乱码，怎么解决？`**
+- **`Airline等插件有乱码，怎么解决？`**
 
     linux和mac系统需设置终端字体为`Droid Sans Mono Nerd Font`。
 
 - **`以上没有我遇到的问题怎么办？`**
 
-    您可以通过上网找解决方法，或提[Issues][39]，也可以通过加QQ`787280310`、发邮件方式`787280310@qq.com`一起讨论解决方法。
+    您可以通过上网找解决方法，或提[Issues][39]，发邮件方式`nicolaserhe@outlook.com`一起讨论解决方法。
 
 
 ## License
