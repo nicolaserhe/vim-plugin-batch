@@ -34,7 +34,7 @@ vim-plugin-batch
 
 | `插件` | 说明 |
 |--|--|
-| `[dracula/vim][1]` | dracula 主题 |
+| [dracula/vim][1] | dracula 主题 |
 | [NerdTree][6]                       | 代码资源管理器                                                                 |
 | [vim-nerdtree-syntax-highlight][52] | NerdTree文件类型高亮                                                           |
 | [nerdtree-git-plugin][53]           | NerdTree显示git状态                                                            |
