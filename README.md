@@ -32,6 +32,8 @@ vim-plugin-batch
 
 ## 插件列表
 
+#### 常规插件
+
 | 插件 | 说明 |
 |--|--|
 | [dracula/vim][1] | dracula 主题 |
@@ -56,14 +58,15 @@ vim-plugin-batch
 | [bronson/vim-trailing-whitespace][11] | 将行尾空白字符标记为红色 |
 | [vim-fugitive][36]                  | 集成Git                                                                        |
 
+#### Git插件
+[airblade/vim-gitgutter][1], [tpope/vim-fugitive][2]
 
-| [prabirshrestha/asyncomplete-lsp.vim"
-| [prabirshrestha/asyncomplete.vim"
-| [prabirshrestha/vim-lsp"
-| [mattn/vim-lsp-settings"
+#### lsp(语言服务器协议)插件
+[prabirshrestha/asyncomplete-lsp.vim][1]
+[prabirshrestha/asyncomplete.vim][1]
+[prabirshrestha/vim-lsp][11]
+[mattn/vim-lsp-settings][11]
 
-| [airblade/vim-gitgutter"
-| [tpope/vim-fugitive"
 
 
 ## 快捷键
