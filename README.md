@@ -1,26 +1,12 @@
 ![vimplus-logo][1]
 
-An automatic configuration program for vim
+vim-plugin-batch
 ===============================================
-
-<p align="center">
-    <a href="#build" alt="build"><img src="https://img.shields.io/badge/build-passing-brightgreen.svg" /></a>
-    <a href="#安装" alt="platform"><img src="https://img.shields.io/badge/platform-MacOSX%20%7C%20Linux%2064bit%20%7C%20Docker%20%7C%20WSL%20%7C%20Android-brightgreen.svg" /></a>
-    <a href="https://github.com/chxuan/vimplus/stargazers" alt="stars"><img src="https://img.shields.io/github/stars/chxuan/vimplus.svg?style=popout&label=stars" /></a>
-    <a href="https://github.com/chxuan/vimplus/forks" alt="forks"><img src="https://img.shields.io/github/forks/chxuan/vimplus.svg?style=popout&label=forks" /></a>
-    <a href="https://github.com/chxuan/vimplus/graphs/contributors" alt="contributors"><img src="https://img.shields.io/github/contributors/chxuan/vimplus" /></a>
-    <a href="https://github.com/chxuan/vimplus/blob/master/LICENSE" alt="lincense"><img src="https://img.shields.io/badge/license-MIT-blue.svg" /></a>
-</p>
 
 ![main][2]
 
 ## 安装
 
-### Mac OS X
-
-#### 安装[HomeBrew][3]
-
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 #### 安装vimplus
 
