@@ -56,11 +56,11 @@ vim-plugin-batch
 
     git clone https://github.com/chxuan/vimplus.git ~/.vimplus
     cd ~/.vimplus
-    ./install.sh //不加sudo
+    ./install.sh
 
 #### 设置Nerd Font
 
-为防止vimplus显示乱码，需设置linux终端字体为`Droid Sans Mono Nerd Font`。
+为防止乱码，需设置linux终端字体为`Droid Sans Mono Nerd Font`。
 
 #### 多用户支持
 
@@ -75,55 +75,22 @@ vim-plugin-batch
     ./update.sh
 
 
-### Android 64-bit([Termux][87])
-
-#### 安装vimplus
-
-    git clone https://github.com/chxuan/vimplus.git ~/.vimplus
-    cd ~/.vimplus
-    ./install.sh
-
-#### 更新vimplus
-
-紧跟vimplus的步伐，尝鲜新特性
-
-    ./update.sh
-
-
-### Docker
-
-[ubuntu-vimplus][79]是vimplus基于ubuntu18.04的docker镜像，无需安装vimplus，即可快速体验vimplus带来的快乐
-
-    docker run -it chxuan/ubuntu-vimplus
-
-
 ## 自定义
 
-> * [~/.vimrc][82]为vimplus的默认配置，一般不做修改
-> * [~/.vimrc.custom.plugins][83]为用户自定义插件列表，用户增加、卸载插件请修改该文件
-> * [~/.vimrc.custom.config][84]为用户自定义配置文件，一般性配置请放入该文件，可覆盖[~/.vimrc][82]里的配置
+> * [~/.vimrc][82]是vim的配置文件,可根据需求进行修改
 
 
 ## 插件列表
 
 | 插件                                | 说明                                                                           |
 | -------                             | -----                                                                          |
-| [cpp-mode][58]                      | 提供生成函数实现、函数声明/实现跳转、.h .cpp切换等功能(I'm author:smile:)      |
-| [vim-edit][72]                      | 方便的文本编辑插件(I'm author:smile:)                                          |
-| [change-colorscheme][27]            | 随心所欲切换主题(I'm author:smile:)                                            |
-| [prepare-code][67]                  | 新建文件时，生成预定义代码片段(I'm author:smile:)                              |
-| [vim-buffer][70]                    | vim缓存操作(I'm author:smile:)                                                 |
-| [vimplus-startify][66]              | vimplus开始页面(修改自[mhinz/vim-startify][25])                                |
-| [tagbar][13]                        | 使用[preservim/tagbar][13]的最新版本，[taglist][14]的替代品，显示类/方法/变量 |
-| [vim-plug][4]                       | 比[Vundle][54]下载更快的插件管理软件                                           |
-| [YouCompleteMe][5]                  | 史上最强大的基于语义的自动补全插件，支持C/C++、C#、Python、PHP等语言           |
 | [NerdTree][6]                       | 代码资源管理器                                                                 |
 | [vim-nerdtree-syntax-highlight][52] | NerdTree文件类型高亮                                                           |
 | [nerdtree-git-plugin][53]           | NerdTree显示git状态                                                            |
 | [vim-devicons][15]                  | 显示文件类型图标                                                               |
 | [Airline][8]                        | 可以取代[powerline][9]的状态栏美化插件                                         |
 | [auto-pairs][10]                    | 自动补全引号、圆括号、花括号等                                                 |
-| [LeaderF][56]                       | 比[ctrlp][12]更强大的文件的模糊搜索工具                                        |
+| [LeaderF][56]                       | 更强大的文件的模糊搜索工具                                                     |
 | [ack][62]                           | 强大的文本搜索工具                                                             |
 | [vim-surround][16]                  | 自动增加、替换配对符的插件                                                     |
 | [vim-commentary][17]                | 快速注释代码插件                                                               |
@@ -133,20 +100,17 @@ vim-plugin-batch
 | [vim-easymotion][23]                | 强大的光标快速移动工具，强大到颠覆你的插件观                                   |
 | [incsearch.vim][24]                 | 模糊字符搜索插件                                                               |
 | [vim-fugitive][36]                  | 集成Git                                                                        |
-| [gv][64]                            | 显示git提交记录                                                                |
 | [vim-slash][50]                     | 优化搜索，移动光标后清除高亮                                                   |
-| [echodoc][57]                       | 补全函数时在命令栏显示函数签名                                                 |
 | [vim-smooth-scroll][60]             | 让翻页更顺畅                                                                   |
-| [clever-f.vim][68]                  | 强化f和F键                                                                     |
 
 
 ## 快捷键
 
-以下是部分快捷键，可通过vimplus的`,h`命令查看[vimplus帮助文档][59]。
+以下是部分快捷键，可通过vimplus的`<leader>h`命令查看[vimplus帮助文档][59]。
 
 | 快捷键              | 说明                                      |
 | -------             | -----                                     |
-| `,`                 | Leader Key                                |
+| `\`                 | Leader Key                                |
 | `<leader>n`         | 打开/关闭代码资源管理器                   |
 | `<leader>t`         | 打开/关闭函数列表                         |
 | `<leader>a`         | .h .cpp 文件切换                          |
@@ -227,37 +191,9 @@ vim-plugin-batch
 
     linux和mac系统需设置终端字体为`Droid Sans Mono Nerd Font`。
 
-- **`xshell连接远程主机不能使用vim-devicons或乱码。`**
-
-    windows系统安装[Nerd Font][51]字体后并更改xshell字体即可。
-
-- **`ubuntu18.04安装了nerd font但通过终端属性并没有看到该字体。`**
-
-    可以试试dconf-editor软件来设置，可以参考[这里][76]。
-
-- **`使用第三方库时怎么让ycm补全第三方库API？`**
-
-    vimplus安装完毕之后，`~`目录下将会生成两个隐藏文件分别是.vimrc和.ycm_extra_conf.py，其中.vimrc是vim的配置文件，.ycm_extra_conf.py是ycm插件的配置文件，当你需要创建一个project时，需要将.ycm_extra_conf.py拷贝到project的顶层目录，通过修改该配置文件里面的`flags`变量来添加你的第三方库路径。
-
-- **`使用vi命令报错：E492: Not an editor command:`**
-
-    vimplus安装完成后，linux下可能会同时存在vi和vim命令，执行vi时，vi加载~/.vimrc文件可能会报错，但不影响使用，如果要消除错误可以设置软链接`ln -s /usr/bin/vim /usr/bin/vi`
-
-- **`怎么自定义文件头，比如说添加作者、创建时间？`**
-
-    你可以修改[chxuan/prepare-code][67]插件来达到目的，可以参考[这里][77]。
-
-- **`安装vimplus在“[ 95%] Building CXX object ycm/CMakeFiles/ycm_core.dir/ycm_core.cpp.o”等进度时出现编译报错`**
-
-    编译ycm需要消耗较大内存，建议内存大于1G，实在不行也可以开启linux swap分区。
-
 - **`以上没有我遇到的问题怎么办？`**
 
     您可以通过上网找解决方法，或提[Issues][39]，也可以通过加QQ`787280310`、发邮件方式`787280310@qq.com`一起讨论解决方法。
-
-- **`vimplus用起来真的太棒了，怎么办？`**
-
-    那就麻烦您打赏一颗:star::star:吧，给予我继续维护的动力。
 
 
 ## License
@@ -281,7 +217,7 @@ This software is licensed under the [MIT license][75]. © 2024 Changyi Guo
   [16]: https://github.com/tpope/vim-surround
   [17]: https://github.com/tpope/vim-commentary
   [18]: https://github.com/tpope/vim-repeat
-  [75]: https://github.com/nicolasere/vim-plugin-batch/LICENSE
+  [75]: https://github.com/nicolaserhe/vim-plugin-batch/LICENSE
   [76]: https://blog.csdn.net/wang73ying/article/details/82491993
   [77]: https://blog.csdn.net/liuyangbo121/article/details/82971736
   [78]: https://github.com/chxuan/vimplus/blob/master/install.sh
