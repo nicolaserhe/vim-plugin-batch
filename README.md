@@ -127,21 +127,21 @@ vim-plugin-batch
 
 ## FAQ
 
-- **`vim-plugin-batch怎么安装新插件？`**
+- **`vim-plugin-batch安装新插件`**
 
     编辑[~/.vimrc][83]，添加自定义插件。
 
-- **`vim-plugin-batch安装后会安装那些依赖？`**
+- **`vim-plugin-batch安装后会安装的依赖`**
 
     todo
 
-- **`Airline等插件有乱码，怎么解决？`**
+- **`Airline等插件乱码`**
 
     linux和mac系统需设置终端字体为`Droid Sans Mono Nerd Font`。
 
-- **`以上没有我遇到的问题怎么办？`**
+- **`其它问题`**
 
-    您可以通过上网找解决方法，或提[Issues][39]，发邮件方式`nicolaserhe@outlook.com`一起讨论解决方法。
+    提[Issues][39]，或者发送邮件,邮箱地址:`nicolaserhe@outlook.com`。
 
 
 ## License
