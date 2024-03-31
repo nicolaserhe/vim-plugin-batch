@@ -32,52 +32,36 @@ vim-plugin-batch
 
 ## 插件列表
 
-| `插件` | 说明 |
+| 插件 | 说明 |
 |--|--|
 | [dracula/vim][1] | dracula 主题 |
-| [NerdTree][6]                       | 代码资源管理器                                                                 |
-| [vim-nerdtree-syntax-highlight][52] | NerdTree文件类型高亮                                                           |
-| [nerdtree-git-plugin][53]           | NerdTree显示git状态                                                            |
-| [vim-devicons][15]                  | 显示文件类型图标                                                               |
-| [Airline][8]                        | 可以取代[powerline][9]的状态栏美化插件                                         |
-| [auto-pairs][10]                    | 自动补全引号、圆括号、花括号等                                                 |
-| [LeaderF][56]                       | 更强大的文件的模糊搜索工具                                                     |
-| [ack][62]                           | 强大的文本搜索工具                                                             |
-| [vim-surround][16]                  | 自动增加、替换配对符的插件                                                     |
-| [vim-commentary][17]                | 快速注释代码插件                                                               |
-| [vim-repeat][18]                    | 重复上一次操作                                                                 |
-| [vim-endwise][19]                   | if/end/endif/endfunction补全                                                   |
-| [tabular][20]                       | 代码、注释、表格对齐                                                           |
-| [vim-easymotion][23]                | 强大的光标快速移动工具，强大到颠覆你的插件观                                   |
-| [incsearch.vim][24]                 | 模糊字符搜索插件                                                               |
+| [preservim/nerdtree][6] | 代码资源管理器 |
+| [tiagofumo/vim-nerdtree-syntax-highlight][52] | NerdTree文件类型高亮 |
+| [Xuyuanp/nerdtree-git-plugin][53] | NerdTree显示git状态 |
+| [jiangmiao/auto-pairs][10] | 自动补全引号、圆括号、花括号等 |
+| [yggdroot/indentline][11] | 显示缩进 |
+| [luochen1990/rainbow][11] | 彩虹括号插件 |
+| [godlygeek/tabular][20] | 代码、注释、表格对齐 |
+| [ryanoasis/vim-devicons][15] | 显示文件类型图标 |
+| [vim-airline/vim-airline][8] | 状态栏美化 |
+| [Yggdroot/LeaderF][56] | 模糊搜索 |
+| [tpope/vim-surround][16] | 自动增加、替换配对符的插件 |
+| [tpope/vim-commentary][17] | 注释代码 |
+| [tpope/vim-endwise][19] | if/end/endif/endfunction补全 |
+| [junegunn/vim-slash][50] | 移动光标后清除高亮 |
+| [ton/vim-alternate][100] | 在.c和.h文件之间切换 |
+| [octol/vim-cpp-enhanced-highlight][11] | cpp代码高亮 |
+| [vim-utils/vim-man][100] | 增强man手册 |
+| [junegunn/vim-peekaboo][11] | 输入双引号的时候显示所有宏内容 |
+| [bronson/vim-trailing-whitespace][11] | 将行尾空白字符标记为红色 |
 | [vim-fugitive][36]                  | 集成Git                                                                        |
-| [vim-slash][50]                     | 优化搜索，移动光标后清除高亮                                                   |
-| [vim-smooth-scroll][60]             | 让翻页更顺畅                                                                   |
 
 
 | [prabirshrestha/asyncomplete-lsp.vim"
 | [prabirshrestha/asyncomplete.vim"
 | [prabirshrestha/vim-lsp"
 | [mattn/vim-lsp-settings"
-| [preservim/nerdtree"
-| [tiagofumo/vim-nerdtree-syntax-highlight"
-| [Xuyuanp/nerdtree-git-plugin"
-| [jiangmiao/auto-pairs"                                  # 关于括号对的插件
-| [yggdroot/indentline"                                   # 显示缩进
-| [luochen1990/rainbow"                                   # 彩虹括号插件
-| [godlygeek/tabular"                                     # 处理表格的插件
-| [vim-airline/vim-airline"                               # 底部和顶部buffer状态栏的插件
-| [ton/vim-alternate"                                     # 在.c和.h文件之间切换的插件
-| [tpope/vim-commentary"                                  # 注释插件
-| [octol/vim-cpp-enhanced-highlight"                      # cpp高亮插件
-| [ryanoasis/vim-devicons"                                # 为文件添加图标
-| [tpope/vim-endwise"                                     # 自动添加特殊结构的结束符号，比如shell中if的fi
-| [vim-utils/vim-man"                                     # 增强man手册插件
-| [junegunn/vim-peekaboo"                                 # 输入双引号的时候显示当前的宏
-| [junegunn/vim-slash"                                    # 增强缓冲区搜索体验插件
-| [tpope/vim-surround"                                    # 给选中的字符串加外部括号对的插件
-| [bronson/vim-trailing-whitespace"                       # 将行尾空白字符标记为红色
-| [Yggdroot/LeaderF"
+
 | [airblade/vim-gitgutter"
 | [tpope/vim-fugitive"
 
