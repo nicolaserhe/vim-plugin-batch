@@ -40,6 +40,7 @@ plugins=(
     "junegunn/vim-slash"                                    # 增强缓冲区搜索体验插件
     "tpope/vim-surround"                                    # 给选中的字符串加外部括号对的插件
     "bronson/vim-trailing-whitespace"                       # 将行尾空白字符标记为红色
+    "Yggdroot/LeaderF"
 )
 
 gits=(
