@@ -5,16 +5,12 @@ vim-plugin-batch
 
 ![main][2]
 
-## 安装
+## Installation
+    git clone https://github.com/nicolaserhe/vim-plugin-batch  ~/vim-plugin-batch
 
-
-#### 安装vimplus
-
-    git clone https://github.com/chxuan/vimplus.git ~/.vimplus
-    cd ~/.vimplus
+    cd ~/vim-plugin-batch
     ./install.sh
 
-注: apline用户请预先安装git,bash: apk add git bash
 
 #### 设置Nerd Font
 
