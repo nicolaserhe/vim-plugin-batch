@@ -173,25 +173,25 @@ This software is licensed under the [MIT license][75]. © 2024 Changyi Guo
   [4]: https://github.com/tiagofumo/vim-nerdtree-syntax-highlight
   [5]: https://github.com/Xuyuanp/nerdtree-git-plugin
   [6]: https://github.com/jiangmiao/auto-pairs
-  [6]: https://github.com/yggdroot/indentline
-  [7]: https://github.com/luochen1990/rainbow
-  [8]: https://github.com/godlygeek/tabular
-  [9]: https://github.com/ryanoasis/vim-devicons
-  [10]: https://github.com/vim-airline/vim-airline
-  [11]: https://github.com/Yggdroot/LeaderF][56
-  [12]: https://github.com/tpope/vim-surround
-  [13]: https://github.com/tpope/vim-commentary
-  [14]: https://github.com/tpope/vim-endwise
-  [15]: https://github.com/junegunn/vim-slash
-  [16]: https://github.com/ton/vim-alternate
-  [17]: https://github.com/octol/vim-cpp-enhanced-highlight
-  [18]: https://github.com/vim-utils/vim-man][100
-  [19]: https://github.com/junegunn/vim-peekaboo
-  [20]: https://github.com/bronson/vim-trailing-whitespace
-  [21]: https://github.com/airblade/vim-gitgutter
-  [22]: https://github.com/tpope/vim-fugitive
-  [23]: https://github.com/[prabirshrestha/asyncomplete-lsp.vim
-  [24]: https://github.com/[prabirshrestha/asyncomplete.vim
-  [25]: https://github.com/[prabirshrestha/vim-lsp
-  [26]: https://github.com/[mattn/vim-lsp-settings
+  [7]: https://github.com/yggdroot/indentline
+  [8]: https://github.com/luochen1990/rainbow
+  [9]: https://github.com/godlygeek/tabular
+  [10]: https://github.com/ryanoasis/vim-devicons
+  [11]: https://github.com/vim-airline/vim-airline
+  [12]: https://github.com/Yggdroot/LeaderF][56
+  [13]: https://github.com/tpope/vim-surround
+  [14]: https://github.com/tpope/vim-commentary
+  [15]: https://github.com/tpope/vim-endwise
+  [16]: https://github.com/junegunn/vim-slash
+  [17]: https://github.com/ton/vim-alternate
+  [18]: https://github.com/octol/vim-cpp-enhanced-highlight
+  [19]: https://github.com/vim-utils/vim-man][100
+  [20]: https://github.com/junegunn/vim-peekaboo
+  [21]: https://github.com/bronson/vim-trailing-whitespace
+  [22]: https://github.com/airblade/vim-gitgutter
+  [23]: https://github.com/tpope/vim-fugitive
+  [24]: https://github.com/[prabirshrestha/asyncomplete-lsp.vim
+  [25]: https://github.com/[prabirshrestha/asyncomplete.vim
+  [26]: https://github.com/[prabirshrestha/vim-lsp
+  [27]: https://github.com/[mattn/vim-lsp-settings
 
