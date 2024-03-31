@@ -262,7 +262,7 @@ vim-plugin-batch
 
 ## License
 
-This software is licensed under the [MIT license][75]. © 2016 chxuan
+This software is licensed under the [MIT license][75]. © 2024 Changyi Guo
 
 
   [1]: https://raw.githubusercontent.com/chxuan/vimplus/master/screenshots/vimplus-logo.png
@@ -281,33 +281,7 @@ This software is licensed under the [MIT license][75]. © 2016 chxuan
   [16]: https://github.com/tpope/vim-surround
   [17]: https://github.com/tpope/vim-commentary
   [18]: https://github.com/tpope/vim-repeat
-  [19]: https://github.com/tpope/vim-endwise
-  [20]: https://github.com/godlygeek/tabular
-  [23]: https://github.com/easymotion/vim-easymotion
-  [24]: https://github.com/haya14busa/incsearch.vim
-  [25]: https://github.com/mhinz/vim-startify
-  [27]: https://github.com/chxuan/change-colorscheme
-  [36]: https://github.com/tpope/vim-fugitive
-  [38]: https://github.com/Valloric/YouCompleteMe
-  [39]: https://github.com/chxuan/vimplus/issues
-  [50]: https://github.com/junegunn/vim-slash
-  [51]: https://github.com/ryanoasis/nerd-fonts
-  [52]: https://github.com/tiagofumo/vim-nerdtree-syntax-highlight
-  [53]: https://github.com/Xuyuanp/nerdtree-git-plugin
-  [54]: https://github.com/VundleVim/Vundle.vim
-  [56]: https://github.com/Yggdroot/LeaderF
-  [57]: https://github.com/Shougo/echodoc.vim
-  [58]: https://github.com/chxuan/cpp-mode
-  [59]: https://github.com/chxuan/vimplus/blob/master/help.md
-  [60]: https://github.com/terryma/vim-smooth-scroll
-  [62]: https://github.com/mileszs/ack.vim
-  [64]: https://github.com/junegunn/gv.vim
-  [66]: https://github.com/chxuan/vimplus-startify
-  [67]: https://github.com/chxuan/prepare-code
-  [68]: https://github.com/rhysd/clever-f.vim
-  [70]: https://github.com/chxuan/vim-buffer
-  [72]: https://github.com/chxuan/vim-edit
-  [75]: https://github.com/chxuan/vimplus/blob/master/LICENSE
+  [75]: https://github.com/nicolasere/vim-plugin-batch/LICENSE
   [76]: https://blog.csdn.net/wang73ying/article/details/82491993
   [77]: https://blog.csdn.net/liuyangbo121/article/details/82971736
   [78]: https://github.com/chxuan/vimplus/blob/master/install.sh
