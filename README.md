@@ -1,7 +1,7 @@
 vim-plugin-batch
 ===============================================
 
-![main][1]
+![Screenshot][1]
 
 ## Installation
 
@@ -154,7 +154,7 @@ vim-plugin-batch
 This software is licensed under the [MIT license][75]. © 2024 Changyi Guo
 
 
-  [1]: https://raw.githubusercontent.com/nicolaserhe/vim-plugin-batch/Screenshot.png
+  [1]: https://github.com/nicolaserhe/vim-plugin-batch/Screenshot.png
   [3]: https://brew.sh/
   [4]: https://github.com/junegunn/vim-plug
   [5]: https://github.com/Valloric/YouCompleteMe
