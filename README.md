@@ -59,13 +59,15 @@ vim-plugin-batch
 | [vim-fugitive][36]                  | 集成Git                                                                        |
 
 #### Git插件
-[airblade/vim-gitgutter][1], [tpope/vim-fugitive][2]
+
+    [airblade/vim-gitgutter][1], [tpope/vim-fugitive][2]
 
 #### lsp(语言服务器协议)插件
-[prabirshrestha/asyncomplete-lsp.vim][1]
-[prabirshrestha/asyncomplete.vim][1]
-[prabirshrestha/vim-lsp][11]
-[mattn/vim-lsp-settings][11]
+
+    [prabirshrestha/asyncomplete-lsp.vim][1]
+    [prabirshrestha/asyncomplete.vim][1]
+    [prabirshrestha/vim-lsp][11]
+    [mattn/vim-lsp-settings][11]
 
 
 
