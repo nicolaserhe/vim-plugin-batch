@@ -19,6 +19,12 @@ vim-plugin-batch
 
 leaderF插件中查找函数需要用到`ctags`,查找单词引用需要`global`
 
+## 下载语言服务器协议(lsp)
+
+不同语言的Lsp不会自动下载,需要手动下载,下载Lsp的方法是使用vi打开文件,在命令行模式下执行`LspInstallServer`
+
+    :lspInstallServer
+
 
 ## Update
 
