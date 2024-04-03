@@ -172,6 +172,10 @@ noremap <leader>s :<C-U><C-R>=printf("Leaderf! gtags -r %s --auto-jump", expand(
 noremap <leader>ws :<C-U><C-R>=printf("Leaderf! gtags -r %s --auto-jump", expand("<cword>"))<CR> --popup<CR>
 
 
+" vim-man
+nnoremap <leader>m :Man <C-R><C-W><cr>
+
+
 " 显示tab和空格
 " set list
 " set listchars:tab:\|-,space:•
@@ -179,4 +183,3 @@ noremap <leader>ws :<C-U><C-R>=printf("Leaderf! gtags -r %s --auto-jump", expand
 
 " 禁用vim-indent-guides插件
 " let g:indentLine_enabled = 0
-
