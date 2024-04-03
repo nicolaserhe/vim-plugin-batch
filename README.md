@@ -66,7 +66,7 @@ vim-plugin-batch
 
 ## 快捷键
 
-以下是部分快捷键，可通过`:helpFile`命令查看[help.md][59]。
+以下是插件的部分快捷键，可通过`:helpFile`命令查看[help.md][29]。
 
 | 快捷键              | 说明                                      |
 | -------             | -----                                     |
@@ -177,4 +177,5 @@ This software is licensed under the [MIT license][75]. © 2024 Changyi Guo
   [26]: https://github.com/prabirshrestha/vim-lsp
   [27]: https://github.com/mattn/vim-lsp-settings
   [28]: https://github.com/nicolaserhe/vim-plugin-batch/.vimrc
+  [28]: https://github.com/nicolaserhe/vim-plugin-batch/help.md
 
