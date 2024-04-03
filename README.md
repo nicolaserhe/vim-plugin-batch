@@ -15,6 +15,11 @@ vim-plugin-batch
 为防止乱码，需设置终端字体为`Droid Sans Mono Nerd Font`。
 
 
+## 下载所需依赖
+
+leaderF插件中查找函数需要用到`ctags`,查找单词引用需要`global`
+
+
 ## Update
 
     cd ~/vim-plugin-batch && ./update.sh
