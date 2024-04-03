@@ -160,14 +160,14 @@ This software is licensed under the [MIT license][75]. © 2024 Changyi Guo
   [9]: https://github.com/godlygeek/tabular
   [10]: https://github.com/ryanoasis/vim-devicons
   [11]: https://github.com/vim-airline/vim-airline
-  [12]: https://github.com/Yggdroot/LeaderF][56
+  [12]: https://github.com/Yggdroot/LeaderF
   [13]: https://github.com/tpope/vim-surround
   [14]: https://github.com/tpope/vim-commentary
   [15]: https://github.com/tpope/vim-endwise
   [16]: https://github.com/junegunn/vim-slash
   [17]: https://github.com/ton/vim-alternate
   [18]: https://github.com/octol/vim-cpp-enhanced-highlight
-  [19]: https://github.com/vim-utils/vim-man][100
+  [19]: https://github.com/vim-utils/vim-man
   [20]: https://github.com/junegunn/vim-peekaboo
   [21]: https://github.com/bronson/vim-trailing-whitespace
   [22]: https://github.com/airblade/vim-gitgutter
