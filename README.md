@@ -27,7 +27,7 @@ vim-plugin-batch
 
 ## 自定义
 
-> * [~/.vimrc][82]是vim的配置文件,可根据需求进行修改
+    > * [~/.vimrc][28]是vim的配置文件,可根据需求进行修改
 
 
 ## 插件列表
@@ -172,8 +172,9 @@ This software is licensed under the [MIT license][75]. © 2024 Changyi Guo
   [21]: https://github.com/bronson/vim-trailing-whitespace
   [22]: https://github.com/airblade/vim-gitgutter
   [23]: https://github.com/tpope/vim-fugitive
-  [24]: https://github.com/[prabirshrestha/asyncomplete-lsp.vim
-  [25]: https://github.com/[prabirshrestha/asyncomplete.vim
-  [26]: https://github.com/[prabirshrestha/vim-lsp
-  [27]: https://github.com/[mattn/vim-lsp-settings
+  [24]: https://github.com/prabirshrestha/asyncomplete-lsp.vim
+  [25]: https://github.com/prabirshrestha/asyncomplete.vim
+  [26]: https://github.com/prabirshrestha/vim-lsp
+  [27]: https://github.com/mattn/vim-lsp-settings
+  [28]: https://github.com/nicolaserhe/vim-plugin-batch/.vimrc
 
