@@ -158,7 +158,11 @@ set updatetime=100
 
 
 " LeaderF
-let g:Lf_Hidehelp = 1
+let g:Lf_HideHelp = 1
+let g:Lf_UseCache = 0
+let g:Lf_UseVersionControlTool = 0
+let g:Lf_IgnoreCurrentBufferName = 1
+
 nnoremap <leader>F :Leaderf! file<cr>
 nnoremap <leader>wF :Leaderf! file --popup<cr>
 
@@ -171,6 +175,8 @@ nnoremap <leader>wf :Leaderf! function --popup<cr>
 nnoremap <leader>t :Leaderf! bufTag <cr>
 nnoremap <leader>wt :Leaderf! bufTag --popup<cr>
 
+let g:Lf_GtagsAutoGenerate = 0
+let g:Lf_Gtagslabel = 'native-pygments'
 noremap <leader>s :<C-U><C-R>=printf("Leaderf! gtags -r %s --auto-jump", expand("<cword>"))<CR><CR>
 noremap <leader>ws :<C-U><C-R>=printf("Leaderf! gtags -r %s --auto-jump", expand("<cword>"))<CR> --popup<CR>
 
