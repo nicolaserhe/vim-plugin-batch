@@ -162,6 +162,9 @@ let g:Lf_Hidehelp = 1
 nnoremap <leader>F :Leaderf! file<cr>
 nnoremap <leader>wF :Leaderf! file --popup<cr>
 
+nnoremap <leader>b :Leaderf! buffer<cr>
+nnoremap <leader>wb :Leaderf! buffer --popup<cr>
+
 nnoremap <leader>f :Leaderf! function <cr>
 nnoremap <leader>wf :Leaderf! function --popup<cr>
 

@@ -69,66 +69,31 @@ vim-plugin-batch
 以下是插件的部分快捷键，可通过`:helpFile`命令查看[help.md][29]。
 
 | 快捷键 | 说明 |
-| `\`                 | Leader Key                                |
-| `<leader>n`         | 打开/关闭代码资源管理器                   |
-| `<leader>t`         | 打开/关闭函数列表                         |
-| `<leader>a`         | .h .cpp 文件切换                          |
-| `<leader>u`         | 转到函数声明                              |
-| `<leader>U`         | 转到函数实现                              |
-| `<leader>u`         | 转到变量声明                              |
-| `<leader>o`         | 打开include文件                           |
-| `<leader>y`         | 拷贝函数声明                              |
-| `<leader>p`         | 生成函数实现                              |
-| `<leader>w`         | 单词跳转                                  |
-| `<leader>f`         | 搜索~目录下的文件                         |
-| `<leader>F`         | 搜索当前目录下的文本                      |
-| `<leader>g`         | 显示git仓库提交记录                       |
-| `<leader>G`         | 显示当前文件提交记录                      |
-| `<leader>gg`        | 显示当前文件在某个commit下的完整内容      |
-| `<leader>ff`        | 语法错误自动修复(FixIt)                   |
-| `<c-p>`             | 切换到上一个buffer                        |
-| `<c-n>`             | 切换到下一个buffer                        |
-| `<leader>d`         | 删除当前buffer                            |
-| `<leader>D`         | 删除当前buffer外的所有buffer              |
-| `vim`               | 运行vim编辑器时,默认启动开始页面          |
-| `<F5>`              | 显示语法错误提示窗口                      |
-| `<F9>`              | 显示上一主题                              |
-| `<F10>`             | 显示下一主题                              |
-| `<leader>l`         | 按竖线对齐                                |
-| `<leader>=`         | 按等号对齐                                |
-| `Ya`                | 复制行文本到字母a                         |
-| `Da`                | 剪切行文本到字母a                         |
-| `Ca`                | 改写行文本到字母a                         |
-| `rr`                | 替换文本                                  |
-| `<leader>r`         | 全局替换，目前只支持单个文件              |
-| `rev`               | 翻转当前光标下的单词或使用V模式选择的文本 |
-| `gcc`               | 注释代码                                  |
-| `gcap`              | 注释段落                                  |
-| `vif`               | 选中函数内容                              |
-| `dif`               | 删除函数内容                              |
-| `cif`               | 改写函数内容                              |
-| `vaf`               | 选中函数内容（包括函数名 花括号）         |
-| `daf`               | 删除函数内容（包括函数名 花括号）         |
-| `caf`               | 改写函数内容（包括函数名 花括号）         |
-| `fa`                | 查找字母a，然后再按f键查找下一个          |
-| `<leader>e`         | 快速编辑~/.vimrc文件                      |
-| `<leader>s`         | 重新加载~/.vimrc文件                      |
-| `<leader>vp`        | 快速编辑~/.vimrc.custom.plugins文件       |
-| `<leader>vc`        | 快速编辑~/.vimrc.custom.config文件        |
-| `<leader>h`         | 打开vimplus帮助文档                       |
-| `<leader>H`         | 打开当前光标所在单词的vim帮助文档         |
-| `<leader><leader>t` | 生成try-catch代码块                       |
-| `<leader><leader>y` | 复制当前选中到系统剪切板                  |
-| `<leader><leader>i` | 安装插件                                  |
-| `<leader><leader>u` | 更新插件                                  |
-| `<leader><leader>c` | 删除插件                                  |
+|--|--|
+| `\` | Leader Key |
+| `<leader>n` | 打开/关闭代码资源管理器 |
+| `<leader>f` | 查看当前文件函数列表 |
+| `<leader>t` | 查看当前文件函数和类列表 |
+| `<leader>a` | .h .c 文件切换 |
+| `<leader>F` | 查找当前目录下的文件 |
+| `<leader>b` | 模糊当前buffer中的文件 |
+| `<leader>d` | 转到函数或变量定义 |
+| `<leader>D` | 转到函数或变量声明 |
+| `<leader>r` | 转到函数或变量的下一次引用 |
+| `<leader>R` | 转到函数或变量的上一次引用 |
+| `<leader>e` | 转到下一处错误点 |
+| `<leader>E` | 转到上一次错误点 |
+| `<leader>W` | 转到下一次警告点 |
+| `<leader>w` | 转到上一次警告点 |
+| `<leader>s` | 在整个项目中显示光标下单词被引用的地方 |
+| `<leader><space>` | 删除当前文件末尾处的空白字符 |
 
 
 ## FAQ
 
 - **`vim-plugin-batch安装新插件`**
 
-    编辑[~/.vimrc][83]，添加自定义插件。
+    编辑[~/.vimrc][28]，添加自定义插件。
 
 - **`vim-plugin-batch安装后会安装的依赖`**
 
@@ -145,7 +110,7 @@ vim-plugin-batch
 
 ## License
 
-This software is licensed under the [MIT license][75]. © 2024 Changyi Guo
+This software is licensed under the [MIT license][30]. © 2024 Changyi Guo
 
 
   [1]: https://github.com/nicolaserhe/vim-plugin-batch/blob/master/Screenshot.png
@@ -177,4 +142,5 @@ This software is licensed under the [MIT license][75]. © 2024 Changyi Guo
   [27]: https://github.com/mattn/vim-lsp-settings
   [28]: https://github.com/nicolaserhe/vim-plugin-batch/.vimrc
   [29]: https://github.com/nicolaserhe/vim-plugin-batch/help.md
+  [30]: https://github.com/nicolaserhe/vim-plugin-batch/LICENSE
 
