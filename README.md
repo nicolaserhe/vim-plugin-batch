@@ -76,17 +76,18 @@ vim-plugin-batch
 | `<leader>t` | 查看当前文件函数和类列表 |
 | `<leader>a` | .h .c 文件切换 |
 | `<leader>F` | 查找当前目录下的文件 |
-| `<leader>b` | 模糊当前buffer中的文件 |
+| `<leader>b` | 查找当前buffer中的文件 |
 | `<leader>d` | 转到函数或变量定义 |
 | `<leader>D` | 转到函数或变量声明 |
 | `<leader>r` | 转到函数或变量的下一次引用 |
 | `<leader>R` | 转到函数或变量的上一次引用 |
 | `<leader>e` | 转到下一处错误点 |
 | `<leader>E` | 转到上一次错误点 |
-| `<leader>W` | 转到下一次警告点 |
-| `<leader>w` | 转到上一次警告点 |
+| `<leader>Wa` | 转到下一次警告点 |
+| `<leader>wa` | 转到上一次警告点 |
 | `<leader>s` | 在整个项目中显示光标下单词被引用的地方 |
 | `<leader><space>` | 删除当前文件末尾处的空白字符 |
+| `<leader>m` | 打开当前光标下单词的man手册 |
 
 
 ## FAQ
