@@ -45,7 +45,6 @@ plugins=(
 
 gits=(
     "airblade/vim-gitgutter"
-    "tpope/vim-fugitive"
 )
 
 #######################################################################

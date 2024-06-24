@@ -69,7 +69,6 @@ leaderF插件中查找函数需要用到`ctags`,查找单词引用需要`global`
 | [junegunn/vim-peekaboo][20] | 输入双引号的时候显示所有宏内容 |
 | [bronson/vim-trailing-whitespace][21] | 将行尾空白字符标记为红色 |
 | [airblade/vim-gitgutter][22] | 集成Git |
-| [tpope/vim-fugitive][23] | | Git |
 | [prabirshrestha/asyncomplete-lsp.vim][24] | Lsp补全  |
 | [prabirshrestha/asyncomplete.vim][25] | 代码补全 |
 | [prabirshrestha/vim-lsp][26] | Lsp客户端 |
@@ -160,7 +159,6 @@ This software is licensed under the [MIT license][30]. © 2024 Changyi Guo
   [20]: https://github.com/junegunn/vim-peekaboo
   [21]: https://github.com/bronson/vim-trailing-whitespace
   [22]: https://github.com/airblade/vim-gitgutter
-  [23]: https://github.com/tpope/vim-fugitive
   [24]: https://github.com/prabirshrestha/asyncomplete-lsp.vim
   [25]: https://github.com/prabirshrestha/asyncomplete.vim
   [26]: https://github.com/prabirshrestha/vim-lsp
