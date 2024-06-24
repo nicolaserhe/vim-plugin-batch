@@ -122,7 +122,7 @@ leaderF插件中查找函数需要用到`ctags`,查找单词引用需要`global`
 
 - **`其它问题`**
 
-    提[Issues][39]，或者发送邮件,邮箱地址:`nicolaserhe@outlook.com`。
+    提[Issues][31]，或者发送邮件,邮箱地址:`nicolaserhe@outlook.com`。
 
 
 ## License
@@ -160,4 +160,5 @@ This software is licensed under the [MIT license][30]. © 2024 Changyi Guo
   [28]: https://github.com/nicolaserhe/vim-plugin-batch/.vimrc
   [29]: https://github.com/nicolaserhe/vim-plugin-batch/help.md
   [30]: https://github.com/nicolaserhe/vim-plugin-batch/LICENSE
+  [31]: https://github.com/nicolaserhe/vim-plugin-batch/issues
 
