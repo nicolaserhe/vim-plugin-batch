@@ -29,6 +29,8 @@
 | `:GitGutterFold` | 折叠所有未更改文本段 |
 | `zr` | 在 hunk 上方和下方展开 3 行上下文 |
 
+']和`]   ]{
+
 | `<leader>g`         | 显示git仓库提交记录                       |
 | `<leader>G`         | 显示当前文件提交记录                      |
 | `<leader>gg`        | 显示当前文件在某个commit下的完整内容      |
