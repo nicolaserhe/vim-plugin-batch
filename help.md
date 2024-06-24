@@ -15,10 +15,13 @@
 | `<leader>u`         | 转到变量声明                              |
 | `<leader>o`         | 打开include文件                           |
 | `<leader>y`         | 拷贝函数声明                              |
-| `<leader>p`         | 生成函数实现                              |
-| `<leader>w`         | 单词跳转                                  |
-| `<leader>f`         | 搜索当前目录下的文件                      |
-| `<leader>F`         | 搜索当前目录下的文本                      |
+| `<leader>y`         | 拷贝函数声明                              |
+| `<leader>y`         | 拷贝函数声明                              |
+| `<leader>y`         | 拷贝函数声明                              |
+| `<leader>y`         | 拷贝函数声明                              |
+| `<leader>y`         | 拷贝函数声明                              |
+| `<leader>y`         | 拷贝函数声明                              |
+
 | `<leader>g`         | 显示git仓库提交记录                       |
 | `<leader>G`         | 显示当前文件提交记录                      |
 | `<leader>gg`        | 显示当前文件在某个commit下的完整内容      |

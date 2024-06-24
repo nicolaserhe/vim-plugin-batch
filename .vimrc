@@ -157,6 +157,7 @@ let g:NERDTreePatternMatchHighlightFullName = 1
 set updatetime=100
 set foldtext=gitgutter#fold#foldtext()
 
+" 将改变行数的其结果嵌入到状态行中
 function! GitStatus()
   let [a,m,r] = GitGutterGetHunkSummary()
   return printf('+%d ~%d -%d', a, m, r)
