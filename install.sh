@@ -105,3 +105,6 @@ for item in "${gits[@]}"
 do
     git clone "$github"/"$item"
 done
+
+# 生成帮助文档
+cp help.md ~/.vim
