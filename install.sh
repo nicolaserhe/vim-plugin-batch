@@ -42,7 +42,6 @@ plugins=(
     "tpope/vim-surround"                                    # 给选中的字符串加外部括号对的插件
     "bronson/vim-trailing-whitespace"                       # 将行尾空白字符标记为红色
     "Yggdroot/LeaderF"
-    "preservim/vim-markdown"
 )
 
 gits=(
