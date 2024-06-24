@@ -126,17 +126,17 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 inoremap <expr> <cr>   pumvisible() ? asyncomplete#close_popup() : "\<cr>"
 
 nnoremap <leader>d :LspDefinition<cr>
-nnoremap <leader>wd :LspPeekDefinition<cr>
+" nnoremap <leader>wd :LspPeekDefinition<cr>
 
-nnoremap <f5>d :LspDeclaration<cr>
-nnoremap <f5>wd :LspPeekDeclaration<cr>
+nnoremap <leader>D :LspDeclaration<cr>
+" nnoremap <leader>wD :LspPeekDeclaration<cr>
 
-nnoremap <leader>r :LspNextReference<cr>
-nnoremap <leader>R :LspPreviousReference<cr>
-nnoremap <leader>e :LspNextError<cr>
-nnoremap <f5>e :LspPreviousError<cr>
-nnoremap <leader>wa :LspNextWarning<cr>
-nnoremap <f5>wa :LspPreviousWarning<cr>
+nnoremap ]r :LspNextReference<cr>
+nnoremap [r :LspPreviousReference<cr>
+nnoremap ]e :LspNextError<cr>
+nnoremap [e :LspPreviousError<cr>
+nnoremap ]w :LspNextWarning<cr>
+nnoremap [w :LspPreviousWarning<cr>
 " let g:lsp_diagnostics_enabled = 0         " disable diagnostics support
 
 
@@ -171,14 +171,14 @@ let g:Lf_UseCache = 0
 let g:Lf_UseVersionControlTool = 0
 let g:Lf_IgnoreCurrentBufferName = 1
 
-nnoremap <f5>f :Leaderf! file<cr>
-nnoremap <f5>wf :Leaderf! file --popup<cr>
+nnoremap <leader>fi :Leaderf! file<cr>
+nnoremap <leader>wfi :Leaderf! file --popup<cr>
 
 nnoremap <leader>b :Leaderf! buffer<cr>
 nnoremap <leader>wb :Leaderf! buffer --popup<cr>
 
-nnoremap <leader>f :Leaderf! function <cr>
-nnoremap <leader>wf :Leaderf! function --popup<cr>
+nnoremap <leader>fu :Leaderf! function <cr>
+nnoremap <leader>wfu :Leaderf! function --popup<cr>
 
 nnoremap <leader>t :Leaderf! bufTag <cr>
 nnoremap <leader>wt :Leaderf! bufTag --popup<cr>

@@ -3,24 +3,31 @@
 | 快捷键 | 说明 |
 | -- | -- |
 | `\` | Leader Key |
-
-
-
-
-| `<leader>n`         | 打开/关闭代码资源管理器                   |
-| `<leader>t`         | 打开/关闭函数列表                         |
-| `<leader>a`         | .h .cpp 文件切换                          |
-| `<leader>u`         | 转到函数声明                              |
-| `<leader>U`         | 转到函数实现                              |
-| `<leader>u`         | 转到变量声明                              |
-| `<leader>o`         | 打开include文件                           |
-| `<leader>y`         | 拷贝函数声明                              |
-| `<leader>y`         | 拷贝函数声明                              |
-| `<leader>y`         | 拷贝函数声明                              |
-| `<leader>y`         | 拷贝函数声明                              |
-| `<leader>y`         | 拷贝函数声明                              |
-| `<leader>y`         | 拷贝函数声明                              |
-| `<leader>y`         | 拷贝函数声明                              |
+| `<leader>n` | 打开/关闭代码资源管理器 |
+| `<leader>f` | 查看当前文件函数列表 |
+| `<leader>t` | 查看当前文件函数和类列表 |
+| `<leader>a` | .h .c 文件切换 |
+| `<leader>F` | 查找当前目录下的文件 |
+| `<leader>b` | 查找当前buffer中的文件 |
+| `<leader>d` | 转到函数或变量定义 |
+| `<leader>D` | 转到函数或变量声明 |
+| `<leader>r` | 转到函数或变量的下一次引用 |
+| `<leader>R` | 转到函数或变量的上一次引用 |
+| `<leader>e` | 转到下一处错误点 |
+| `<leader>E` | 转到上一次错误点 |
+| `<leader>Wa` | 转到下一次警告点 |
+| `<leader>wa` | 转到上一次警告点 |
+| `<leader>s` | 在整个项目中显示光标下单词被引用的地方 |
+| `<leader><space>` | 删除当前文件末尾处的空白字符 |
+| `<leader>m` | 打开当前光标下单词的man手册 |
+| `]c` | 跳转到下一个 hunk |
+| `[c` | 跳转到上一个 hunk |
+| `<Leader>hs` | 暂存 hunk |
+| `<Leader>hu` | 撤销暂存 hunk |
+| `<Leader>hp` | 预览 hunk |
+| `:GitGutterDiffOrig` | 打开当前缓冲区的 vimdiff 视图 |
+| `:GitGutterFold` | 折叠所有未更改文本段 |
+| `zr` | 在 hunk 上方和下方展开 3 行上下文 |
 
 | `<leader>g`         | 显示git仓库提交记录                       |
 | `<leader>G`         | 显示当前文件提交记录                      |
