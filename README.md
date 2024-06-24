@@ -102,6 +102,12 @@ leaderF插件中查找函数需要用到`ctags`,查找单词引用需要`global`
 | `<leader>m` | 打开当前光标下单词的man手册 |
 | `]c` | 跳转到下一个 hunk |
 | `[c` | 跳转到上一个 hunk |
+| `<Leader>hs` | 暂存 hunk |
+| `<Leader>hu` | 撤销暂存 hunk |
+| `<Leader>hp` | 预览 hunk |
+| `:GitGutterDiffOrig` | 打开当前缓冲区的 vimdiff 视图 |
+| `:GitGutterFold` | 折叠所有未更改文本段 |
+| `zr` | 在 hunk 上方和下方展开 3 行上下文 |
 
 如果执行`<leader>s`出现错误,或者查找不准确,可以在命令行模式下执行`Leaderf gtags --update`
 

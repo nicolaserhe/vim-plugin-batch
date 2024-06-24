@@ -155,6 +155,13 @@ let g:NERDTreePatternMatchHighlightFullName = 1
 
 " vim-gitgutter
 set updatetime=100
+set foldtext=gitgutter#fold#foldtext()
+
+function! GitStatus()
+  let [a,m,r] = GitGutterGetHunkSummary()
+  return printf('+%d ~%d -%d', a, m, r)
+endfunction
+set statusline+=%{GitStatus()}
 
 
 " LeaderF
