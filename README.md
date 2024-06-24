@@ -163,8 +163,8 @@ This software is licensed under the [MIT license][30]. © 2024 Changyi Guo
   [25]: https://github.com/prabirshrestha/asyncomplete.vim
   [26]: https://github.com/prabirshrestha/vim-lsp
   [27]: https://github.com/mattn/vim-lsp-settings
-  [28]: https://github.com/nicolaserhe/vim-plugin-batch/.vimrc
-  [29]: https://github.com/nicolaserhe/vim-plugin-batch/help.md
-  [30]: https://github.com/nicolaserhe/vim-plugin-batch/LICENSE
-  [31]: https://github.com/nicolaserhe/vim-plugin-batch/issues
+  [28]: https://github.com/nicolaserhe/vim-plugin-batch/blob/main/.vimrc
+  [29]: https://github.com/nicolaserhe/vim-plugin-batch/blob/main/help.md
+  [30]: https://github.com/nicolaserhe/vim-plugin-batch/blob/main/LICENSE
+  [31]: https://github.com/nicolaserhe/vim-plugin-batch/blob/main/issues
 
