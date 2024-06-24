@@ -6,6 +6,7 @@
 #######################################################################
 github="https://github.com"
 vim_pack=""$HOME"/.vim/pack"
+work_dir="$PWD"
 
 themes=(
     "dracula/vim"
@@ -108,4 +109,4 @@ do
 done
 
 # 生成帮助文档
-cp help.md ~/.vim
+cp $work_dir/help.md ~/.vim
