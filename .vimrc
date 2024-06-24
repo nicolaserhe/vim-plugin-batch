@@ -117,7 +117,7 @@ nnoremap <leader>a :Alternate<cr>
 
 
 " vim-trailing-whitespace
-nnoremap <leader><space> :FixWhitespace<cr>                                      " 绑定leader+space为删除行尾空格
+nnoremap <leader><space> :FixWhitespace<cr>
 
 
 " vim-lsp
@@ -128,20 +128,20 @@ inoremap <expr> <cr>   pumvisible() ? asyncomplete#close_popup() : "\<cr>"
 nnoremap <leader>d :LspDefinition<cr>
 nnoremap <leader>wd :LspPeekDefinition<cr>
 
-nnoremap <leader>D :LspDeclaration<cr>
-nnoremap <leader>wD :LspPeekDeclaration<cr>
+nnoremap <f5>d :LspDeclaration<cr>
+nnoremap <f5>wd :LspPeekDeclaration<cr>
 
 nnoremap <leader>r :LspNextReference<cr>
 nnoremap <leader>R :LspPreviousReference<cr>
 nnoremap <leader>e :LspNextError<cr>
-nnoremap <leader>E :LspPreviousError<cr>
+nnoremap <f5>e :LspPreviousError<cr>
 nnoremap <leader>wa :LspNextWarning<cr>
-nnoremap <leader>Wa :LspPreviousWarning<cr>
+nnoremap <f5>wa :LspPreviousWarning<cr>
 " let g:lsp_diagnostics_enabled = 0         " disable diagnostics support
 
 
 " auto-pair
-let g:AutoPairsShortcutJump = '<F1>'
+" let g:AutoPairsShortcutJump = '<F1>'
 
 
 " nerdtree
@@ -163,8 +163,8 @@ let g:Lf_UseCache = 0
 let g:Lf_UseVersionControlTool = 0
 let g:Lf_IgnoreCurrentBufferName = 1
 
-nnoremap <leader>F :Leaderf! file<cr>
-nnoremap <leader>wF :Leaderf! file --popup<cr>
+nnoremap <f5>f :Leaderf! file<cr>
+nnoremap <f5>wf :Leaderf! file --popup<cr>
 
 nnoremap <leader>b :Leaderf! buffer<cr>
 nnoremap <leader>wb :Leaderf! buffer --popup<cr>
@@ -185,6 +185,8 @@ noremap <leader>ws :<C-U><C-R>=printf("Leaderf! gtags -r %s --auto-jump", expand
 nnoremap <leader>m :Man <C-R><C-W><cr>
 
 
+
+" 默认tab键是扩展成空格
 " 显示tab和空格
 " set list
 " set listchars:tab:\|-,space:•
