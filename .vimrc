@@ -155,6 +155,8 @@ let g:NERDTreePatternMatchHighlightFullName = 1
 
 " vim-gitgutter
 set updatetime=100
+" [c 和 ]c在hunk之间跳转
+" <leader>hp 、 <leader>hs 和 <leader>hu 预览、暂存和撤消 hunk
 
 
 " LeaderF
