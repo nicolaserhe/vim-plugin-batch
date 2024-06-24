@@ -194,6 +194,8 @@ nnoremap <leader>m :Man <C-R><C-W><cr>
 
 
 
+command! HelpFile :edit ~/.vim/help.md
+
 " 默认tab键是扩展成空格
 " 显示tab和空格
 " set list
