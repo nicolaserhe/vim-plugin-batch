@@ -2,7 +2,7 @@
 
 | 快捷键              | 说明                                      |
 | -------             | -----                                     |
-| `,`                 | Leader Key                                |
+| `\`                 | Leader Key                                |
 | `<leader>n`         | 打开/关闭代码资源管理器                   |
 | `<leader>t`         | 打开/关闭函数列表                         |
 | `<leader>a`         | .h .cpp 文件切换                          |

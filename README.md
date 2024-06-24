@@ -100,6 +100,9 @@ leaderF插件中查找函数需要用到`ctags`,查找单词引用需要`global`
 | `<leader>s` | 在整个项目中显示光标下单词被引用的地方 |
 | `<leader><space>` | 删除当前文件末尾处的空白字符 |
 | `<leader>m` | 打开当前光标下单词的man手册 |
+| `]c` | 跳转到下一个 hunk |
+| `[c` | 跳转到上一个 hunk |
+| `[c` | 跳转到上一个 hunk |
 
 如果执行`<leader>s`出现错误,或者查找不准确,可以在命令行模式下执行`Leaderf gtags --update`
 
