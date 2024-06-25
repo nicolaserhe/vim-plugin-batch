@@ -29,7 +29,7 @@
 | `:GitGutterFold` | 折叠所有未更改文本段 |
 | `zr` | 在 hunk 上方和下方展开 3 行上下文 |
 
-']和`]   ]{
+<!-- ']和`]   ]{ -->
 
 
 ## 插入模式
@@ -48,12 +48,12 @@
 
 ## 缓存操作
 
-| 快捷键          | 说明               |
-| ------         | -----              |
-| `:e <filename>` | 新建buffer打开文件 |
-| `:bp`           | 切换到上一个buffer |
-| `:bn`           | 切换到下一个buffer |
-| `:bd`           | 删除当前buffer     |
+| 快捷键 | 说明 |
+| -- | -- |
+| `:e[dit] <filename>` | 新建buffer打开文件 |
+| `:bp[revious]` | 切换到上一个buffer |
+| `:bn[ext]` | 切换到下一个buffer |
+| `:bd[elete]` | 删除当前buffer |
 
 
 ## 窗口操作
