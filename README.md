@@ -80,13 +80,13 @@ leaderF插件中查找函数需要用到`ctags`,查找单词引用需要`global`
 以下是插件的部分快捷键，可通过`:HelpFile`命令查看[help.md][29]。
 
 | 快捷键 | 说明 |
-|--|--|
+| -- | -- |
 | `\` | Leader Key |
 | `<leader>n` | 打开/关闭代码资源管理器 |
-| `<leader>f` | 查看当前文件函数列表 |
-| `<leader>t` | 查看当前文件函数和类列表 |
 | `<leader>a` | .h .c 文件切换 |
-| `<leader>F` | 查找当前目录下的文件 |
+| `<leader>fi` | 查找当前目录下的文件 |
+| `<leader>fu` | 查看当前文件函数列表 |
+| `<leader>t` | 查看当前文件函数和类列表 |
 | `<leader>b` | 查找当前buffer中的文件 |
 | `<leader>d` | 转到函数或变量定义 |
 | `<leader>D` | 转到函数或变量声明 |
