@@ -92,6 +92,7 @@ set guifont=ComicShannsMono\ Nerd\ Font\ 12
 set background=dark
 let g:onedark_termcolors=256
 colorscheme dracula
+set t_RV=
 
 
 " airline
@@ -122,7 +123,7 @@ let g:AlternatePaths = ['.', '..']                                          " �
 
 
 " vim-lsp
-" let g:lsp_diagnostics_enabled = 0                                         " disable diagnostics support
+let g:lsp_diagnostics_enabled = 1                                           " disable diagnostics support
 
 
 " nerdtree
@@ -228,15 +229,4 @@ command! BufTagWin :Leaderf! bufTag --popup<cr>
 noremap <leader>s :<C-U><C-R>=printf("Leaderf! gtags -r %s --auto-jump", expand("<cword>"))<CR><CR>
 nnoremap <leader>m :Man <C-R><C-W><cr>
 command! HelpFile :edit ~/.vim/help.md
-
-
-" 默认tab键是扩展成空格
-" 显示tab和空格
-" set list
-" set listchars:tab:\|-,space:•
-" highlight specialkey guifg=darkgrey ctermfg=darkgrey
-
-" 禁用vim-indent-guides插件
-" let g:indentLine_enabled = 0
-
 
