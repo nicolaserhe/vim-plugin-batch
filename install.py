@@ -14,9 +14,10 @@ from rich.live import Live
 from rich.progress import Progress, BarColumn, TextColumn
 
 HOME_DIR = os.path.expanduser('~')
-CURRENT_PATH = os.getcwd()
-PLUG_DIR = os.path.abspath("./plugins")
+PLUG_DIR = os.path.join(HOME_DIR, ".vim/pack")
+HELP_DIR = os.path.join(HOME_DIR, ".vim")
 VIM_FILE = ".vimrc"
+HELP_FILE = "help.md"
 CONFIG_FILE = "plugins.yaml"
 console = Console()
 
@@ -80,12 +81,14 @@ def clone_plugin(repo, pack, section, max_retries=2):
                 return plugin, False
 
 def main():
-    vimrc_path = os.path.join(os.getcwd(), VIM_FILE)
-    shutil.copy(vimrc_path, HOME_DIR)
-
     if os.path.exists(PLUG_DIR):
         shutil.rmtree(PLUG_DIR)
     os.makedirs(PLUG_DIR, exist_ok=True)
+
+    vimrc_path = os.path.join(os.getcwd(), VIM_FILE)
+    shutil.copy(vimrc_path, HOME_DIR)
+    help_path = os.path.join(os.getcwd(), HELP_FILE)
+    shutil.copy(help_path, HOME_DIR)
 
     plugin_repos = load_plugins(CONFIG_FILE)
     if not plugin_repos:
