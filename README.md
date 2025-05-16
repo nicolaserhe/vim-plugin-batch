@@ -4,10 +4,11 @@ vim-plugin-batch
 ![Screenshot][1]
 
 ## Installation
+## Linux / MacOS
 
-    git clone https://github.com/nicolaserhe/vim-plugin-batch  ~/vim-plugin-batch
-    cd ~/vim-plugin-batch
-    ./install.sh
+    git clone https://github.com/nicolaserhe/vim-plugin-batch
+    cd vim-plugin-batch
+    python3 install.py
 
 
 ## 设置Nerd Font
