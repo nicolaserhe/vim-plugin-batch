@@ -1,56 +1,56 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 通用设置
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set nocompatible         " 设置不兼容原始vi模式
-filetype on              " 设置开启文件类型侦测
-filetype plugin on       " 设置加载对应文件类型的插件
-syntax enable            " 开启语法高亮功能
-syntax on                " 自动语法高亮
-set t_Co=256             " 开启256色支持
-set cmdheight=2          " 设置命令行的高度
-set showcmd              " 待决模式下显示输入的命令
-set number               " 开启行号显示
-set cursorline           " 高亮显示当前行
-set ttimeoutlen=0        " 设置<ESC>键响应时间
+set nocompatible               " 不兼容原始vi模式
+filetype on                   " 开启文件类型侦测
+filetype plugin on            " 加载对应文件类型插件
+syntax enable                 " 语法高亮
+syntax on                    " 自动语法高亮
+set t_Co=256                 " 支持256色
+set cmdheight=2              " 命令行高度
+set showcmd                  " 显示部分命令
+set number                   " 显示行号
+set cursorline               " 高亮当前行
+set ttimeoutlen=0            " <ESC>响应时间
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 代码缩进和排版
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-filetype indent on       " 自适应不同语言的智能缩进
-set tabstop=4            " 设置制表符占用空白字符数
-set shiftwidth=4         " 设置缩进占用空白字符数
-set softtabstop=4        " 设置tab键占用空白字符数
-set expandtab            " 将制表符扩展为空格
+filetype indent on           " 智能缩进
+set tabstop=4                " 制表符宽度
+set shiftwidth=4             " 缩进宽度
+set softtabstop=4            " Tab键宽度
+set expandtab                " 用空格代替制表符
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" 代码补全
+" 代码补全设置
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set wildmenu             " 命令行下自动补全显示菜单
-set completeopt-=preview " 补全时不显示窗口，只显示补全列表
+set wildmenu                 " 命令行补全菜单
+set completeopt-=preview     " 补全时不显示预览窗口
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 搜索设置
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set hlsearch            " 高亮显示搜索结果
-set incsearch           " 开启实时搜索功能
-set ignorecase          " 设置忽略大小写
-set smartcase           " 设置智能大小写
+set hlsearch                 " 高亮搜索结果
+set incsearch                " 实时搜索
+set ignorecase               " 搜索忽略大小写
+set smartcase                " 智能大小写识别
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 缓存设置
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set nobackup            " 设置不备份
-set hidden              " 可以在不保存当前buffer的情况下，切换buffer
-set autoread            " 文件在vim之外修改过，自动重新读入
-set confirm             " 在处理未保存或只读文件的时候，弹出确认
+set nobackup                 " 不备份
+set hidden                   " 允许切换未保存buffer
+set autoread                 " 外部修改文件自动加载
+set confirm                  " 未保存或只读时确认提示
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" 文件跳转设置
+" 文件跳转快捷键映射
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nnoremap ]t :tabnext<cr>
 nnoremap [t :tabprevious<cr>
@@ -72,13 +72,15 @@ set encoding=utf8
 set fileencodings=utf8,ucs-bom,gbk,cp936,gb2312,gb18030
 
 
-" load vim default plugin
-runtime macros/matchit.vim
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" 其他设置和命令
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+runtime macros/matchit.vim   " 加载默认插件，增强%匹配功能
 
-" 打开文件自动定位到最后编辑的位置
+" 打开文件自动定位到上次编辑位置
 autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | execute "normal! g'\"" | endif
 
-" 清除缓冲区
+" 清除缓冲区命令
 command! ClearBuffer bufdo if index(argv(), bufname()) < 0 | bd | endif
 
 " 设置gvim字体
@@ -86,65 +88,57 @@ set guifont=ComicShannsMono\ Nerd\ Font\ 12
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" 插件设置
+" 插件配置
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" dracula.vim
+
+" --- 颜色主题 ---
 set background=dark
 let g:onedark_termcolors=256
 colorscheme dracula
 set t_RV=
 
-
-" airline
+" --- airline ---
 let g:airline_theme="dracula"
 let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 1                                " 设置开启buffer样式
-let g:airline#extensions#tabline#left_sep = ''                             " 设置左边底部样式
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ''
 let g:airline#extensions#tabline#left_alt_sep = ''
-let g:airline#extensions#tabline#right_sep = ''                            " 设置右边底部样式
+let g:airline#extensions#tabline#right_sep = ''
 let g:airline#extensions#tabline#right_alt_sep = ''
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 
+" --- rainbow ---
+let g:rainbow_active = 1
 
-" rainbow
-let g:rainbow_active = 1                                                    " 启用彩虹括号
+" --- vim-cpp-enhanced-highlight ---
+let g:cpp_class_scope_highlight = 1
+let g:cpp_member_variable_highlight = 1
+let g:cpp_class_decl_highlight = 1
+let g:cpp_posix_standard = 1
+let g:cpp_experimental_template_highlight = 1
 
+" --- vim-alternate ---
+let g:AlternatePaths = ['.', '..']
 
-" vim-cpp-enhanced-highlight
-let g:cpp_class_scope_highlight = 1                                         " 启用类高亮
-let g:cpp_member_variable_highlight = 1                                     " 启用成员变量高亮
-let g:cpp_class_decl_highlight = 1                                          " 启用在声明中类高亮
-let g:cpp_posix_standard = 1                                                " 启用posix的高亮
-let g:cpp_experimental_template_highlight = 1                               " 启用模板的高亮，当文件很大时，会导致卡顿
+" --- vim-lsp ---
+let g:lsp_diagnostics_enabled = 0
 
-
-" vim-alternate
-let g:AlternatePaths = ['.', '..']                                          " 设置去那些目录下找寻头文件
-
-
-" vim-lsp
-let g:lsp_diagnostics_enabled = 1                                           " disable diagnostics support
-
-
-" nerdtree
+" --- nerdtree ---
 let g:NERDTreeFileExtensionHighlightFullName = 1
 let g:NERDTreeExactMatchHighlightFullName = 1
 let g:NERDTreePatternMatchHighlightFullName = 1
 
-
-" vim-gitgutter
+" --- vim-gitgutter ---
 set updatetime=100
 set foldtext=gitgutter#fold#foldtext()
 
-" 将改变行数的其结果嵌入到状态行中
 function! GitStatus()
     let [a,m,r] = GitGutterGetHunkSummary()
     return printf('+%d ~%d -%d', a, m, r)
 endfunction
 set statusline+=%{GitStatus()}
 
-
-" LeaderF
+" --- LeaderF ---
 let g:Lf_HideHelp = 1
 let g:Lf_UseCache = 0
 let g:Lf_UseVersionControlTool = 0
@@ -152,9 +146,7 @@ let g:Lf_IgnoreCurrentBufferName = 1
 let g:Lf_GtagsAutoGenerate = 0
 let g:Lf_Gtagslabel = 'native-pygments'
 
-
-"vim-startify
-" Most used options:~
+" --- vim-startify ---
 let g:startify_bookmarks = [{'c': '~/.vimrc'}, '~/.zshrc']
 let g:startify_change_to_dir = 0
 let g:startify_change_to_vcs_root = 0
@@ -177,16 +169,12 @@ let g:startify_lists = [
             \ ]
 let g:startify_skiplist = []
 let g:startify_update_oldfiles = 1
-
-" Misc options:~
 let g:startify_commands = []
 let g:startify_custom_indices = ['f', 'g', 'h']
 let g:startify_files_number = 5
 let g:startify_fortune_use_unicode = 1
 let g:startify_padding_left = 3
 let g:startify_skiplist_server = [ 'GVIM' ]
-
-" Sessions:~
 let g:startify_session_autoload = 1
 let g:startify_session_before_save = []
 let g:startify_session_delete_buffers = 1
@@ -203,7 +191,9 @@ let g:startify_session_savevars = [
 let g:startify_session_sort = 0
 
 
-" 插件命令的映射
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" 插件命令映射
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nnoremap <leader>a :Alternate<cr>
 nnoremap <leader><space> :FixWhitespace<cr>
 inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
@@ -218,6 +208,7 @@ nnoremap [e :LspPreviousError<cr>
 nnoremap ]w :LspNextWarning<cr>
 nnoremap [w :LspPreviousWarning<cr>
 nnoremap <leader>n :NERDTreeToggle<cr>
+
 command! File :Leaderf! file<cr>
 command! FileWin :Leaderf! file --popup<cr>
 command! Buffer :Leaderf! buffer<cr>
