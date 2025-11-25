@@ -41,7 +41,6 @@ language: # 语言智能支持插件，包含 LSP、自动补全及语法高亮
     - mattn/vim-lsp-settings            # LSP 服务器自动配置管理
     - octol/vim-cpp-enhanced-highlight  # C/C++ 语法高亮增强插件
     - fatih/vim-go                      # go 语法插件
-    - dgryski/vim-godef                 # go 跳转
 
 editing:  # 编辑辅助插件，如括号补全、注释、对齐、代码结构编辑等
   start:

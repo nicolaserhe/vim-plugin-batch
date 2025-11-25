@@ -199,8 +199,13 @@ nnoremap <leader><space> :FixWhitespace<cr>
 inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 " inoremap <expr> <cr>   pumvisible() ? asyncomplete#close_popup() : "\<cr>"
-nnoremap <leader>d :LspDefinition<cr>
-nnoremap <leader>D :LspDeclaration<cr>
+nnoremap gd :LspDefinition<cr>
+nnoremap gD :LspDeclaration<cr>
+nnoremap gr :LspReferences<cr>
+nnoremap <leader>rn :LspRename<cr>
+nnoremap <leader>h :LspHover<cr>
+nnoremap gt :LspTypeDefinition<cr>
+nnoremap gi :LspImplementation<cr>
 nnoremap ]r :LspNextReference<cr>
 nnoremap [r :LspPreviousReference<cr>
 nnoremap ]e :LspNextError<cr>
@@ -208,6 +213,9 @@ nnoremap [e :LspPreviousError<cr>
 nnoremap ]w :LspNextWarning<cr>
 nnoremap [w :LspPreviousWarning<cr>
 nnoremap <leader>n :NERDTreeToggle<cr>
+
+command! DocumentSymbol :LspDocumentSymbol<cr>
+command! WorkspaceSymbol :LspWorkspaceSymbol<cr>
 
 command! File :Leaderf! file<cr>
 command! FileWin :Leaderf! file --popup<cr>
@@ -217,7 +225,7 @@ command! Function :Leaderf! function <cr>
 command! FunctionWin :Leaderf! function --popup<cr>
 command! BufTag :Leaderf! bufTag <cr>
 command! BufTagWin :Leaderf! bufTag --popup<cr>
-noremap <leader>s :<C-U><C-R>=printf("Leaderf! gtags -r %s --auto-jump", expand("<cword>"))<CR><CR>
+" noremap <leader>s :<C-U><C-R>=printf("Leaderf! gtags -r %s --auto-jump", expand("<cword>"))<CR><CR>
 nnoremap <leader>m :Man <C-R><C-W><cr>
 command! HelpFile :edit ~/.vim/help.md
 
