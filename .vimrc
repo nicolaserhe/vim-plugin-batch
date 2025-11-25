@@ -221,3 +221,16 @@ noremap <leader>s :<C-U><C-R>=printf("Leaderf! gtags -r %s --auto-jump", expand(
 nnoremap <leader>m :Man <C-R><C-W><cr>
 command! HelpFile :edit ~/.vim/help.md
 
+let g:go_gopls_enabled = 1
+
+
+" 保存上一次插入模式输入法
+let g:last_input_method = 'xkb:us::eng'
+
+" 进入插入模式时切回之前的输入法
+autocmd InsertEnter * call system('ibus engine ' . g:last_input_method)
+
+" 离开插入模式时切英文，并保存当前输入法
+autocmd InsertLeave * let g:last_input_method = system('ibus engine')
+autocmd InsertLeave * call system('ibus engine xkb:us::eng')
+
