@@ -73,3 +73,7 @@ git:    # Git 集成插件，状态显示和命令增强
 tools:  # 其他辅助工具插件
   start:
     - vim-utils/vim-man                 # man 页面增强阅读体验
+
+ai:   # ai辅助
+  start:
+  - github/copilot.vim
