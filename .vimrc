@@ -164,6 +164,41 @@ xnoremap gf :<C-U><C-R>=printf("Leaderf! rg -F -e %s ", leaderf#Rg#visual())<CR>
 noremap go :<C-U>Leaderf! rg --recall<CR>
 
 " --- vim-startify ---
+"  会话管理设置
+let g:startify_enable_special = 0               " 不显示 <empty buffer> 和 <quit>
+let g:startify_session_dir = '~/.vim/session'   " 会话保存目录
+let g:startify_session_autoload = 1             " 自动加载会话
+let g:startify_session_persistence = 1          " 会话持久化：Vim退出时自动更新
+let g:startify_session_delete_buffers = 1       " 加载/关闭会话时删除所有 buffers（避免残留）
+let g:startify_session_number = 20              " 显示的最大会话数
+let g:startify_session_sort = 1                 " 按修改时间排序（最新的在前）
+" MRU 文件设置
+let g:startify_files_number = 5                 " 最多显示 5 个最近文件
+" 版本控制设置
+let g:startify_change_to_vcs_root = 1           " 切换到版本控制根目录
+" 自定义列表顺序：先 Sessions，再 MRU 文件
+let g:startify_lists = [
+      \ { 'type': 'sessions', 'header': ['   Sessions'] },
+      \ { 'type': 'files',    'header': ['   MRU'] },
+      \ ]
+" 会话保存前的清理操作
+let g:startify_session_before_save = [
+      \ 'silent! tabdo NERDTreeClose',
+      \ 'call DeleteOutsideBuffers()',
+      \ ]
+" 函数：删除不在当前目录及子目录的 buffer
+function! DeleteOutsideBuffers()
+    let l:cwd = getcwd()
+    for buf in getbufinfo({'buflisted':1})
+        if empty(buf.name)
+            continue
+        endif
+        " 不在当前目录或子目录
+        if stridx(buf.name, l:cwd) != 0
+            execute 'silent! bdelete ' . buf.bufnr
+        endif
+    endfor
+endfunction
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
