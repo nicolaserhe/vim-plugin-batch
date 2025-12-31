@@ -139,56 +139,31 @@ endfunction
 set statusline+=%{GitStatus()}
 
 " --- LeaderF ---
+"  general
 let g:Lf_HideHelp = 1
 let g:Lf_UseCache = 0
 let g:Lf_UseVersionControlTool = 0
 let g:Lf_IgnoreCurrentBufferName = 1
-let g:Lf_GtagsAutoGenerate = 0
-let g:Lf_Gtagslabel = 'native-pygments'
+" popup mode
+let g:Lf_WindowPosition = 'popup'
+let g:Lf_StlSeparator = { 'left': "\ue0b0", 'right': "\ue0b2", 'font': "DejaVu Sans Mono for Powerline" }
+let g:Lf_PreviewResult = {'Function': 0, 'BufTag': 0 }
+" shortcuts
+let g:Lf_ShortcutF = "<leader>ff"
+noremap <leader>fb :<C-U><C-R>=printf("Leaderf buffer %s", "")<CR><CR>
+noremap <leader>fm :<C-U><C-R>=printf("Leaderf mru %s", "")<CR><CR>
+noremap <leader>ft :<C-U><C-R>=printf("Leaderf bufTag %s", "")<CR><CR>
+noremap <leader>fl :<C-U><C-R>=printf("Leaderf line %s", "")<CR><CR>
+noremap <leader>fn :<C-U><C-R>=printf("Leaderf function %s", "")<CR><CR>
+noremap <leader>fr :LspReferences<CR>
+noremap <leader>fq :Leaderf quickfix<CR>
+" ripgrep
+noremap <C-B> :<C-U><C-R>=printf("Leaderf! rg --current-buffer -e %s ", expand("<cword>"))<CR>
+noremap <C-F> :<C-U><C-R>=printf("Leaderf! rg -e %s ", expand("<cword>"))<CR>
+xnoremap gf :<C-U><C-R>=printf("Leaderf! rg -F -e %s ", leaderf#Rg#visual())<CR>
+noremap go :<C-U>Leaderf! rg --recall<CR>
 
 " --- vim-startify ---
-let g:startify_bookmarks = [{'c': '~/.vimrc'}, '~/.zshrc']
-let g:startify_change_to_dir = 0
-let g:startify_change_to_vcs_root = 0
-let g:startify_custom_header = [
-        \ '                                 ________  __ __',
-        \ '            __                  /\_____  \/\ \\ \',
-        \ '    __  __ /\_\    ___ ___      \/___//''/''\ \ \\ \',
-        \ '   /\ \/\ \\/\ \ /'' __` __`\        /'' /''  \ \ \\ \_',
-        \ '   \ \ \_/ |\ \ \/\ \/\ \/\ \      /'' /''__  \ \__ ,__\',
-        \ '    \ \___/  \ \_\ \_\ \_\ \_\    /\_/ /\_\  \/_/\_\_/',
-        \ '     \/__/    \/_/\/_/\/_/\/_/    \//  \/_/     \/_/',
-        \ ]
-let g:startify_enable_special = 0
-let g:startify_lists = [
-            \ { 'type': 'sessions',  'header': ['   Sessions']       },
-            \ { 'type': 'files',     'header': ['   MRU']            },
-            \ { 'type': 'dir',       'header': ['   MRU '. getcwd()] },
-            \ { 'type': 'bookmarks', 'header': ['   Bookmarks']      },
-            \ { 'type': 'commands',  'header': ['   Commands']       },
-            \ ]
-let g:startify_skiplist = []
-let g:startify_update_oldfiles = 1
-let g:startify_commands = []
-let g:startify_custom_indices = ['f', 'g', 'h']
-let g:startify_files_number = 5
-let g:startify_fortune_use_unicode = 1
-let g:startify_padding_left = 3
-let g:startify_skiplist_server = [ 'GVIM' ]
-let g:startify_session_autoload = 1
-let g:startify_session_before_save = []
-let g:startify_session_delete_buffers = 1
-let g:startify_session_dir = '~/.vim/session'
-let g:startify_session_number = 9
-let g:startify_session_persistence = 1
-let g:startify_session_remove_lines = []
-let g:startify_session_savecmds = []
-let g:startify_session_savevars = [
-       \ 'g:startify_session_savevars',
-       \ 'g:startify_session_savecmds',
-       \ 'g:random_plugin_use_feature'
-       \ ]
-let g:startify_session_sort = 0
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -202,8 +177,8 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 nnoremap gd :LspDefinition<cr>
 nnoremap gD :LspDeclaration<cr>
 nnoremap gr :LspReferences<cr>
-nnoremap <leader>rn :LspRename<cr>
-nnoremap <leader>h :LspHover<cr>
+nnoremap <leader>lr :LspRename<cr>
+nnoremap <leader>lh :LspHover<cr>
 nnoremap gt :LspTypeDefinition<cr>
 nnoremap gi :LspImplementation<cr>
 nnoremap ]r :LspNextReference<cr>
@@ -214,18 +189,7 @@ nnoremap ]w :LspNextWarning<cr>
 nnoremap [w :LspPreviousWarning<cr>
 nnoremap <leader>n :NERDTreeToggle<cr>
 
-command! DocumentSymbol :LspDocumentSymbol<cr>
-command! WorkspaceSymbol :LspWorkspaceSymbol<cr>
 
-command! File :Leaderf! file<cr>
-command! FileWin :Leaderf! file --popup<cr>
-command! Buffer :Leaderf! buffer<cr>
-command! BufferWin :Leaderf! buffer --popup<cr>
-command! Function :Leaderf! function <cr>
-command! FunctionWin :Leaderf! function --popup<cr>
-command! BufTag :Leaderf! bufTag <cr>
-command! BufTagWin :Leaderf! bufTag --popup<cr>
-" noremap <leader>s :<C-U><C-R>=printf("Leaderf! gtags -r %s --auto-jump", expand("<cword>"))<CR><CR>
 nnoremap <leader>m :Man <C-R><C-W><cr>
 command! HelpFile :edit ~/.vim/help.md
 
@@ -241,4 +205,29 @@ autocmd InsertEnter * call system('ibus engine ' . g:last_input_method)
 " 离开插入模式时切英文，并保存当前输入法
 autocmd InsertLeave * let g:last_input_method = system('ibus engine')
 autocmd InsertLeave * call system('ibus engine xkb:us::eng')
+
+
+" 函数：预览当前目录下所有 OpenAPI 文件
+" 函数：预览当前 OpenAPI 文件
+function! PreviewOpenAPIFile()
+  " 保存当前文件
+  if &modified
+    write
+  endif
+
+  " 当前文件路径
+  let file = expand('%')
+
+  " 输出 HTML 文件路径
+  let out = '/tmp/openapi.html'
+
+  " 调用 Redocly CLI 生成 HTML
+  exec '!npx @redocly/cli build-docs ' . file . ' -o ' . out
+
+  " 打开浏览器 (Linux/Chrome)
+  exec '!google-chrome ' . out . ' &'
+endfunction
+
+" 绑定快捷键 <leader>o
+nnoremap <leader>o :call PreviewOpenAPIFile()<CR>
 
