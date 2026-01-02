@@ -86,6 +86,11 @@ command! ClearBuffer bufdo if index(argv(), bufname()) < 0 | bd | endif
 " 设置gvim字体
 set guifont=ComicShannsMono\ Nerd\ Font\ 12
 
+" 启用真彩色支持
+if has('termguicolors')
+  set termguicolors
+endif
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 插件配置
@@ -109,6 +114,10 @@ let g:airline#extensions#tabline#formatter = 'unique_tail'
 
 " --- rainbow ---
 let g:rainbow_active = 1
+let g:rainbow_conf = {
+  \   'guifgs': ['#808080'],
+  \   'ctermfgs': ['250'],
+  \}
 
 " --- vim-cpp-enhanced-highlight ---
 let g:cpp_class_scope_highlight = 1
@@ -121,7 +130,7 @@ let g:cpp_experimental_template_highlight = 1
 let g:AlternatePaths = ['.', '..']
 
 " --- vim-lsp ---
-let g:lsp_diagnostics_enabled = 0
+let g:lsp_diagnostics_enabled = 1
 
 " --- nerdtree ---
 let g:NERDTreeFileExtensionHighlightFullName = 1
@@ -200,6 +209,27 @@ function! DeleteOutsideBuffers()
     endfor
 endfunction
 
+" --- vim-go ---
+let g:go_highlight_functions = 1                " 高亮函数定义
+let g:go_highlight_variable_declarations = 1    " 高亮变量定义
+highlight goFunction guifg=Orange
+highlight goComment guifg=#DDA0DD
+highlight Number guifg=LightGreen
+highlight String guifg=LightGreen
+highlight goFormatSpecifier guifg=#DDA0DD
+highlight goVarDefs guifg=LightBlue ctermfg=Cyan
+
+
+" 需要把这个语法组加入文件类型顶层
+" 1）最多使用4种颜色，再多的颜色会分散注意力。
+" 2）变量、函数和类的定义最重要，一般来说，它们是代码的最关键部分，所以定义时的变量名、函数名、类名应该高亮显示。
+" 3）注释也很重要，往往是关键信息，或者是作者希望别人阅读的信息，所以要高亮显示。很多配色方案将注释变灰，这是不对的。
+" 4）常量和函数嵌套（即括号）也是重要信息，需要高亮显示。
+" 5）其他代码不必高亮，包括变量读取、函数调用、关键字（class、function、if、else 等等），因为它们无所不在，你很少会去寻找它们
+" 开启 vim-go 内置高亮
+" 高亮组定义，局部在 Go 文件中使用
+" 函数：只在 Go 文件中执行
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 插件命令映射
@@ -265,4 +295,5 @@ endfunction
 
 " 绑定快捷键 <leader>o
 nnoremap <leader>o :call PreviewOpenAPIFile()<CR>
+
 
