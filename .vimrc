@@ -171,6 +171,7 @@ noremap <C-B> :<C-U><C-R>=printf("Leaderf! rg --current-buffer -e %s ", expand("
 noremap <C-F> :<C-U><C-R>=printf("Leaderf! rg -e %s ", expand("<cword>"))<CR>
 xnoremap gf :<C-U><C-R>=printf("Leaderf! rg -F -e %s ", leaderf#Rg#visual())<CR>
 noremap go :<C-U>Leaderf! rg --recall<CR>
+command! -nargs=1 RgSearch execute 'Leaderf! rg ' . shellescape(<q-args>)
 
 " --- vim-startify ---
 "  会话管理设置
